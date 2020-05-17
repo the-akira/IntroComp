@@ -1,5 +1,7 @@
 <h1 align="center">Introdução aos Princípios da Computação e Programação</h1>
 
-<img align="center" src="https://i.ibb.co/RSHPr9c/intro-Comp.png"></br>
+<h1 align="center">
+    <img src="https://i.ibb.co/RSHPr9c/intro-Comp.png"> </br>
+</h1>
 
-### Projeto em andamento
+<h1 align="center">Projeto em andamento</h1>
