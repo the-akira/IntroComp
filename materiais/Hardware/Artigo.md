@@ -44,6 +44,24 @@ Um **circuito integrado** ou circuito integrado monolítico (também conhecido c
     </blockquote>
 </figure>
 
+## Lei de Moore
+
+A lei de Moore é a observação de que o número de transistores em um circuito integrado denso (CI) dobra a cada dois anos. A lei de Moore é uma observação e projeção de uma tendência histórica. É um relacionamento empírico e não uma lei física ou natural.
+
+A observação recebeu o nome de Gordon Moore, co-fundador da Fairchild Semiconductor e antigo CEO e co-fundador da Intel, cujo trabalho de 1965 descreveu uma duplicação a cada ano no número de componentes por circuito integrado.
+
+![img](https://i.ibb.co/TvyDVc3/Moores-Law2.png)
+
+<figure>
+    <blockquote>
+        <p>O gráfico acima captura a idéia de que, por dólar, a tecnologia de computadores (não apenas os transistores) fica exponencialmente melhor à medida que o tempo passa. Isso é bastante claro se você considerar o custo ou a capacidade de computadores/smartphones/câmeras.</p>
+    </blockquote>
+</figure>
+
+Alguns especialistas acreditam que os computadores devem atingir os limites físicos da Lei de Moore em algum momento da década de 2020. As altas temperaturas dos transistores acabariam impossibilitando a criação de circuitos menores. Isso ocorre porque o resfriamento dos transistores requer mais energia do que a quantidade de energia que já passa pelos transistores. Em uma entrevista de 2005, o próprio Moore admitiu que sua lei "não pode continuar para sempre. É a natureza das funções exponenciais", disse ele, "elas acabam atingindo um muro".
+
+A visão de um futuro interminavelmente fortalecido e interconectado traz desafios e benefícios. Os transistores em retração impulsionaram os avanços na computação por mais de meio século, mas em breve engenheiros e cientistas precisarão encontrar outras maneiras de tornar os computadores mais capazes. Em vez de processos físicos, aplicativos e software podem ajudar a melhorar a velocidade e a eficiência dos computadores. A computação em nuvem, a comunicação *wireless*, a Internet of Things (IoT) e a física quântica podem desempenhar um papel no futuro da inovação em tecnologia de computadores.
+
 ## Componente Principais de um Computador
 
 A **unidade central de processamento (CPU)**, **memória de acesso aleatório (RAM)** e o **armazenamento persistente (HD/Flash)** são os elementos principais de um computador e são encontrados em todos eles: **laptops**, **smartphones**, **tablets** e **desktops**.
@@ -75,7 +93,7 @@ A RAM contém circuitos de multiplexação e desmultiplexação, para conectar a
 - Atua como um quadro em branco/bloco de notas
 - Bytes de armazenamento temporários em funcionamento
 - RAM armazena ambos o código e os dados (temporariamente)
-- Exemplo: abrir uma imagem no GIMP, os dados da imagem são carregados nos bytes da RAM
+- **Exemplo**: abrir uma imagem no GIMP, os dados da imagem são carregados nos bytes da RAM
 
 **Persistência**: RAM não é persistente. O estado desaparece quando a energia é desligada.
 
@@ -96,14 +114,14 @@ A RAM é efetivamente uma área de armazenamento de bytes sob o controle da CPU.
 Uma unidade de disco rígido (HDD), disco rígido ou disco fixo é um dispositivo eletromecânico de armazenamento de dados que usa armazenamento magnético para armazenar e recuperar dados digitais usando um ou mais discos rígidos de rotação rápida revestidos com material magnético. Os discos são emparelhados com cabeças magnéticas, geralmente dispostas em um braço atuador em movimento, que lê e grava dados nas superfícies do disco. Os dados são acessados de maneira aleatória, significando que blocos individuais de dados podem ser armazenados e recuperados em qualquer ordem. Hard Drives são um tipo de armazenamento não volátil, mantendo os dados armazenados mesmo quando desligados.
 
 - Armazenamento persistente de bytes
-- "Persistente" significa preservado mesmo quando não está energizado
+- **Persistente** significa preservado mesmo quando não está energizado
 - Disco rígido - armazena bytes como um padrão magnético em um disco giratório
 - Os discos rígidos são a principal tecnologia de armazenamento persistente há muito tempo
 
 Porém atualmente a memória Flash está se tornando muito popular.
 
-- "Flash" é uma tecnologia de armazenamento persistente do tipo transistor:
-- "Estado Sólido" - sem partes móveis
+- **Flash** é uma tecnologia de armazenamento persistente do tipo transistor:
+- **"Estado Sólido"** - sem partes móveis
 - Também conhecidos como pendrives/SSD's
 - O Flash é melhor do que um disco rígido em todos os aspectos: mais rápido, mais confiável, menos energia
 
