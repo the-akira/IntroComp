@@ -62,7 +62,7 @@ Alguns especialistas acreditam que os computadores devem atingir os limites fís
 
 A visão de um futuro interminavelmente fortalecido e interconectado traz desafios e benefícios. Os transistores em retração impulsionaram os avanços na computação por mais de meio século, mas em breve engenheiros e cientistas precisarão encontrar outras maneiras de tornar os computadores mais capazes. Em vez de processos físicos, aplicativos e software podem ajudar a melhorar a velocidade e a eficiência dos computadores. A computação em nuvem, a comunicação *wireless*, a Internet of Things (IoT) e a física quântica podem desempenhar um papel no futuro da inovação em tecnologia de computadores.
 
-## Componente Principais de um Computador
+## Componentes Principais de um Computador
 
 A **unidade central de processamento (CPU)**, **memória de acesso aleatório (RAM)** e o **armazenamento persistente (HD/Flash)** são os elementos principais de um computador e são encontrados em todos eles: **laptops**, **smartphones**, **tablets** e **desktops**.
 
@@ -82,7 +82,7 @@ A CPU executa as intruções dos códigos, manipulando dados, enquanto os outros
 #### Exemplos
 
 - Executar um script que imprime informações na tela e faz cálculos matemáticos.
-- Treinar uma rede neural artificial com uma conjunto de dados de imagens
+- Treinar uma rede neural artificial com um grande conjunto de dados de imagens
 
 ### 2. RAM
 

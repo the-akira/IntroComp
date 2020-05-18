@@ -5,3 +5,5 @@
 </h1>
 
 <h1 align="center">Projeto em andamento</h1>
+
+<p align="center">Artigos que visam introduzir conceitos essenciais da Ciência da Computação e Programação.</p>
