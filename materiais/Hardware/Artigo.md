@@ -8,7 +8,43 @@ O Software é o conjunto de instruções que podem ser armazenadas e executadas 
 
 O Hardware normalmente é dirigido pelo Software para executar quaisquer comandos/instruções. Uma combinação entre Hardware e Software forma um sistema de computação utilizável.
 
-## Componente Principais
+## Chips e Transistores
+
+Um transistor é um dispositivo semicondutor usado para amplificar ou alternar sinais eletrônicos e energia elétrica. É composto de material semicondutor geralmente com pelo menos três terminais para conexão a um circuito externo. Uma tensão ou corrente aplicada a um par de terminais do transistor controla a corrente através de outro par de terminais. Hoje, alguns transistores são empacotados individualmente, mas muitos mais são encontrados embutidos em circuitos integrados.
+
+![img](https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Replica-of-first-transistor.jpg/310px-Replica-of-first-transistor.jpg)
+
+<figure>
+    <blockquote>
+        <p>Uma réplica do primeiro transistor em funcionamento, um <b>point-contact transistor</b> inventado em 1947.</p>
+    </blockquote>
+</figure>
+
+O transistor mais amplamente usado é o MOSFET (*metal–oxide–semiconductor field-effect transistor*), também conhecido como transistor MOS, que foi inventado pelo engenheiro egípcio Mohamed Atalla juntamente com o engenheiro coreano Dawon Kahng no Bell Labs em 1959.
+
+O MOSFET é o alicerce fundamental dos modernos dispositivos eletrônicos e é onipresente nos sistemas eletrônicos modernos. Um total estimado de 13 sextilhões de MOSFETs foi fabricado entre 1960 e 2018 (pelo menos 99,9% de todos os transistores), tornando o MOSFET o dispositivo mais amplamente fabricado da história.
+
+A maioria dos transistores é feita de silício muito puro e alguns de germânio, mas alguns outros materiais semicondutores são às vezes usados. Um transistor pode ter apenas um tipo de portador de carga em um *field-effect transistor*, ou pode ter dois tipos de portadores de carga em dispositivos *bipolar junction transistor*. Comparados com o tubo de vácuo, os transistores geralmente são menores e requerem menos energia para operar. 
+
+- Transistor - componente eletrônico essencial
+- Transistores são de "estado sólido" - sem partes móveis
+- Uma das inveções mais importantes da história da humanidade
+- Espécie de "Switch" que podemos ligar / desligar com um sinal elétrico
+- Transistores microscópicos são "gravados" em chips de silício
+- Os chips podem conter bilhões de transistores
+- **Exemplos**: Chips de CPU, chips de Memória
+
+Um **circuito integrado** ou circuito integrado monolítico (também conhecido como IC, chip ou microchip) é um conjunto de circuitos eletrônicos em uma pequena peça plana (ou "chip") de material semicondutor que normalmente é silício. A integração de um grande número de minúsculos **transistores MOS** em um pequeno chip resulta em circuitos que são ordens de magnitude menores, mais rápidas e de menor custo do que aquelas construídas com componentes eletrônicos discretos.
+
+![img](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/RUS-IC.JPG/220px-RUS-IC.JPG)
+
+<figure>
+    <blockquote>
+        <p>Um chip soviético MSI nMOS fabricado em 1977, parte de uma calculadora de quatro chips projetada em 1970.</p>
+    </blockquote>
+</figure>
+
+## Componente Principais de um Computador
 
 A **unidade central de processamento (CPU)**, **memória de acesso aleatório (RAM)** e o **armazenamento persistente (HD/Flash)** são os elementos principais de um computador e são encontrados em todos eles: **laptops**, **smartphones**, **tablets** e **desktops**.
 
@@ -79,11 +115,11 @@ Uma unidade flash é mais rápida e consome menos energia que um disco rígido. 
 
 ## Sistema de Arquivos (File System)
 
-Na computação, o File System (frequentemente abreviado como fs) controla como os dados são armazenados e recuperados. Sem um sistema de arquivos, os dados colocados em uma mídia de armazenamento seriam um grande corpo de dados, sem nenhuma maneira de sabermos quando um fragmento de dados termina e o próximo inicia. Ao separar os dados em partes e dar um nome a cada parte, os dados são facilmente isolados e identificados. Tomando seu nome da maneira como o sistema de gerenciamento de dados em papel é nomeado, cada grupo de dados é chamado de "arquivo". As regras de estrutura e lógica usadas para gerenciar os grupos de dados e seus nomes são chamadas de "sistema de arquivos".
+Na computação, o File System (frequentemente abreviado como fs) controla como os dados são armazenados e recuperados. Sem um sistema de arquivos, os dados colocados em uma mídia de armazenamento seriam um grande corpo de dados, sem nenhuma maneira de sabermos quando um fragmento de dados termina e quando o próximo inicia. Ao separar os dados em partes e dar um nome a cada parte, os dados são facilmente isolados e identificados. Tomando seu nome da maneira como o sistema de gerenciamento de dados em papel é nomeado, cada grupo de dados é chamado de "arquivo". As regras de estrutura e lógica usadas para gerenciar os grupos de dados e seus nomes são chamadas de "sistema de arquivos".
 
-- O File System oorganiza os bytes de armazenamento persistente: arquivos (files) e diretórios (folders)
-- "File" - um nome, um identificador para um bloco de bytes
-- Exemplo: `photo.png` se refere à 70KB de bytes de dados da imagem
+- O **File System** organiza os bytes de armazenamento persistente: arquivos (files) e diretórios (folders)
+- **File**: um nome, um identificador para um bloco de bytes
+- **Exemplo**: `photo.png` se refere à 70KB de bytes de dados de uma imagem
 
 ![img](https://i.ibb.co/8D9STgN/filesystem.png)
 
