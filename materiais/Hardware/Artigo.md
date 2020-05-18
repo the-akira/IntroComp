@@ -10,7 +10,7 @@ O Hardware normalmente é dirigido pelo Software para executar quaisquer comando
 
 ## Componente Principais
 
-A **unidade central de processamento (CPU)**, **memória de acesso aleatório (RAM)** e o **armazenamento persistente (HD)** são os elementos principais de um computador e são encontrados em todos eles: **laptops**, **smartphones**, **tablets** e **desktops**.
+A **unidade central de processamento (CPU)**, **memória de acesso aleatório (RAM)** e o **armazenamento persistente (HD/Flash)** são os elementos principais de um computador e são encontrados em todos eles: **laptops**, **smartphones**, **tablets** e **desktops**.
 
 ![img](https://i.ibb.co/F3RKbXR/PComputer.png)
 
@@ -25,10 +25,10 @@ A **unidade central de processamento (CPU)**, também chamado de processador cen
 
 A CPU executa as intruções dos códigos, manipulando dados, enquanto os outros componentes possuem uma função mais passiva, como o armazenamento de dados. Quando dizemos que um computador pode "adicionar dois números, um bilhão de vezes por segundo", esse é o CPU. 
 
-#### Exemplo
+#### Exemplos
 
 - Executar um script que imprime informações na tela e faz cálculos matemáticos.
-- Enviar uma mensagem de texto através de um protocolo
+- Treinar uma rede neural artificial com uma conjunto de dados de imagens
 
 ### 2. RAM
 
@@ -76,3 +76,17 @@ Armazenamento persistente - armazenamento de longo prazo para bytes como arquivo
 Persistente significa que os bytes são armazenados, mesmo quando a energia é removida. Um laptop pode usar um disco rígido giratório (também conhecido como "disco rígido") para armazenamento persistente de arquivos. Ou poderia usar uma "unidade flash", também conhecida como SSD (Solid State Disk), para armazenar bytes em chips flash. O disco rígido lê e grava padrões magnéticos em um disco de metal giratório para armazenar os bytes, enquanto o flash é "estado sólido": sem partes móveis, apenas chips de silício com pequenos grupos de elétrons para armazenar os bytes. Nos dois casos, o armazenamento é persistente, pois mantém seu estado mesmo quando a energia está desligada.
 
 Uma unidade flash é mais rápida e consome menos energia que um disco rígido. No entanto, por byte, o flash é significativamente mais caro que o armazenamento no disco rígido. O Flash está ficando mais barato, por isso pode assumir nichos à custa dos discos rígidos. O flash é muito mais lento que a RAM, portanto, não é um bom substituto para a RAM.
+
+## Sistema de Arquivos (File System)
+
+Na computação, o File System (frequentemente abreviado como fs) controla como os dados são armazenados e recuperados. Sem um sistema de arquivos, os dados colocados em uma mídia de armazenamento seriam um grande corpo de dados, sem nenhuma maneira de sabermos quando um fragmento de dados termina e o próximo inicia. Ao separar os dados em partes e dar um nome a cada parte, os dados são facilmente isolados e identificados. Tomando seu nome da maneira como o sistema de gerenciamento de dados em papel é nomeado, cada grupo de dados é chamado de "arquivo". As regras de estrutura e lógica usadas para gerenciar os grupos de dados e seus nomes são chamadas de "sistema de arquivos".
+
+- O File System oorganiza os bytes de armazenamento persistente: arquivos (files) e diretórios (folders)
+- "File" - um nome, um identificador para um bloco de bytes
+- Exemplo: `photo.png` se refere à 70KB de bytes de dados da imagem
+
+![img](https://i.ibb.co/8D9STgN/filesystem.png)
+
+Essencialmente, cada arquivo no sistema de arquivos refere-se a um bloco de bytes; portanto, o nome `photo.png` refere-se a um bloco de 70KB de bytes, que são os dados dessa imagem. O sistema de arquivos em vigor fornece ao usuário um nome (e possivelmente um ícone) para um bloco de bytes de dados e permite que o usuário execute operações nesses dados, como movê-lo ou copiá-lo ou abri-lo com um programa. O sistema de arquivos também rastreia informações sobre os bytes: quantos existem, a hora em que foram modificados pela última vez.
+
+A Microsoft usa o sistema de arquivos NTFS proprietário e o Mac OS X possui o equivalente HFS+ da Apple. Muitos dispositivos (câmeras, MP3 players) usam o antigo sistema de arquivos Microsoft FAT32 em seus cartões de memória flash.
