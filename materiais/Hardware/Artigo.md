@@ -153,7 +153,7 @@ As GPUs são usadas em sistemas embarcados, telefones celulares, computadores pe
 
 O termo "GPU" foi cunhado pela Sony em referência à GPU da Sony projetada pela Toshiba no console PlayStation em 1994. O termo foi então popularizado pela Nvidia em 1999, que comercializou a GeForce 256 como "a primeira GPU do mundo", que foi apresentado como um "processador de chip único com mecanismos integrados de transformação, iluminação, configuração/corte de triângulo e renderização".
 
-![img](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Generic_block_diagram_of_a_GPU.svg/220px-Generic_block_diagram_of_a_GPU.svg.png)
+![img](https://i.ibb.co/2NtSpJF/gpu.png)
 
 <figure>
     <blockquote>
