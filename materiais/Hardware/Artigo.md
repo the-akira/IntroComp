@@ -54,3 +54,25 @@ A RAM é efetivamente uma área de armazenamento de bytes sob o controle da CPU.
 - Um programa executando em nossa máquina, o código do programa está armazenado em RAM
 - Um programa que manipula imagens: os dados da imagem está em RAM
 - Cada aba aberta em um Web Browser ocupa uma certa quantidade de RAM
+
+### 3. Armazenamento Persistente: Hard Drive / Flash Drive
+
+Uma unidade de disco rígido (HDD), disco rígido ou disco fixo é um dispositivo eletromecânico de armazenamento de dados que usa armazenamento magnético para armazenar e recuperar dados digitais usando um ou mais discos rígidos de rotação rápida revestidos com material magnético. Os discos são emparelhados com cabeças magnéticas, geralmente dispostas em um braço atuador em movimento, que lê e grava dados nas superfícies do disco. Os dados são acessados de maneira aleatória, significando que blocos individuais de dados podem ser armazenados e recuperados em qualquer ordem. Hard Drives são um tipo de armazenamento não volátil, mantendo os dados armazenados mesmo quando desligados.
+
+- Armazenamento persistente de bytes
+- "Persistente" significa preservado mesmo quando não está energizado
+- Disco rígido - armazena bytes como um padrão magnético em um disco giratório
+- Os discos rígidos são a principal tecnologia de armazenamento persistente há muito tempo
+
+Porém atualmente a memória Flash está se tornando muito popular.
+
+- "Flash" é uma tecnologia de armazenamento persistente do tipo transistor:
+- "Estado Sólido" - sem partes móveis
+- Também conhecidos como pendrives/SSD's
+- O Flash é melhor do que um disco rígido em todos os aspectos: mais rápido, mais confiável, menos energia
+
+Armazenamento persistente - armazenamento de longo prazo para bytes como arquivos e pastas. 
+
+Persistente significa que os bytes são armazenados, mesmo quando a energia é removida. Um laptop pode usar um disco rígido giratório (também conhecido como "disco rígido") para armazenamento persistente de arquivos. Ou poderia usar uma "unidade flash", também conhecida como SSD (Solid State Disk), para armazenar bytes em chips flash. O disco rígido lê e grava padrões magnéticos em um disco de metal giratório para armazenar os bytes, enquanto o flash é "estado sólido": sem partes móveis, apenas chips de silício com pequenos grupos de elétrons para armazenar os bytes. Nos dois casos, o armazenamento é persistente, pois mantém seu estado mesmo quando a energia está desligada.
+
+Uma unidade flash é mais rápida e consome menos energia que um disco rígido. No entanto, por byte, o flash é significativamente mais caro que o armazenamento no disco rígido. O Flash está ficando mais barato, por isso pode assumir nichos à custa dos discos rígidos. O flash é muito mais lento que a RAM, portanto, não é um bom substituto para a RAM.
