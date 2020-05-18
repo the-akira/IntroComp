@@ -144,3 +144,19 @@ Na computação, o File System (frequentemente abreviado como fs) controla como 
 Essencialmente, cada arquivo no sistema de arquivos refere-se a um bloco de bytes; portanto, o nome `photo.png` refere-se a um bloco de 70KB de bytes, que são os dados dessa imagem. O sistema de arquivos em vigor fornece ao usuário um nome (e possivelmente um ícone) para um bloco de bytes de dados e permite que o usuário execute operações nesses dados, como movê-lo ou copiá-lo ou abri-lo com um programa. O sistema de arquivos também rastreia informações sobre os bytes: quantos existem, a hora em que foram modificados pela última vez.
 
 A Microsoft usa o sistema de arquivos NTFS proprietário e o Mac OS X possui o equivalente HFS+ da Apple. Muitos dispositivos (câmeras, MP3 players) usam o antigo sistema de arquivos Microsoft FAT32 em seus cartões de memória flash.
+
+## Graphics Processing Unit (GPU)
+
+Uma **unidade de processamento gráfico (GPU)** é um circuito eletrônico especializado projetado para manipular e alterar rapidamente a memória para acelerar a criação de imagens em um buffer de quadro destinado ao *output* para um dispositivo de exibição. 
+
+As GPUs são usadas em sistemas embarcados, telefones celulares, computadores pessoais, estações de trabalho e consoles de jogos. As GPUs modernas são muito eficientes na manipulação de gráficos de computador e processamento de imagens. Sua estrutura altamente paralela os torna mais eficientes do que as unidades de processamento central (CPU) para algoritmos que processam grandes blocos de dados em paralelo. Em um computador pessoal, uma GPU pode estar presente em uma placa de vídeo ou incorporada na placa-mãe.
+
+O termo "GPU" foi cunhado pela Sony em referência à GPU da Sony projetada pela Toshiba no console PlayStation em 1994. O termo foi então popularizado pela Nvidia em 1999, que comercializou a GeForce 256 como "a primeira GPU do mundo", que foi apresentado como um "processador de chip único com mecanismos integrados de transformação, iluminação, configuração/corte de triângulo e renderização".
+
+![img](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Generic_block_diagram_of_a_GPU.svg/220px-Generic_block_diagram_of_a_GPU.svg.png)
+
+<figure>
+    <blockquote>
+        <p>A figura acima mostra os componentes de uma GPU.</p>
+    </blockquote>
+</figure>
