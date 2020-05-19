@@ -31,7 +31,7 @@ A computação opera principalmente independentemente do mundo concreto. O hardw
 
 <figure>
     <blockquote>
-        <p>A figura acima representa as camadas existentes em Computador (Software + Hardware)</p>
+        <p>A figura acima representa as camadas de abstração existentes em Computador (Software + Hardware)</p>
     </blockquote>
 </figure>
 

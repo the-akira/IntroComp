@@ -66,7 +66,13 @@ A visão de um futuro interminavelmente fortalecido e interconectado traz desafi
 
 A **unidade central de processamento (CPU)**, **memória de acesso aleatório (RAM)** e o **armazenamento persistente (HD/Flash)** são os elementos principais de um computador e são encontrados em todos eles: **laptops**, **smartphones**, **tablets** e **desktops**.
 
-![img](https://i.ibb.co/Brs1z2J/Computer.png)
+![img](https://i.ibb.co/QjzvkDL/PComp.png)
+
+<figure>
+    <blockquote>
+        <p>A figura acima representa a conexão entre os principais componentes de um Computador.</p>
+    </blockquote>
+</figure>
 
 ### 1. CPU
 
@@ -139,7 +145,13 @@ Na computação, o File System (frequentemente abreviado como fs) controla como 
 - **File**: um nome, um identificador para um bloco de bytes
 - **Exemplo**: `photo.png` se refere à 70KB de bytes de dados de uma imagem
 
-![img](https://i.ibb.co/8D9STgN/filesystem.png)
+![img](https://i.ibb.co/sJPfVMc/sistema-Arquivos.png)
+
+<figure>
+    <blockquote>
+        <p>A figura acima apresenta um diretório de nome <b>projeto</b> contendo três arquivos de extensões diferentes.</p>
+    </blockquote>
+</figure>
 
 Essencialmente, cada arquivo no sistema de arquivos refere-se a um bloco de bytes; portanto, o nome `photo.png` refere-se a um bloco de 70KB de bytes, que são os dados dessa imagem. O sistema de arquivos em vigor fornece ao usuário um nome (e possivelmente um ícone) para um bloco de bytes de dados e permite que o usuário execute operações nesses dados, como movê-lo ou copiá-lo ou abri-lo com um programa. O sistema de arquivos também rastreia informações sobre os bytes: quantos existem, a hora em que foram modificados pela última vez.
 
