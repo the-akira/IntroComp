@@ -66,11 +66,11 @@ A visão de um futuro interminavelmente fortalecido e interconectado traz desafi
 
 A **unidade central de processamento (CPU)**, **memória de acesso aleatório (RAM)** e o **armazenamento persistente (HD/Flash)** são os elementos principais de um computador e são encontrados em todos eles: **laptops**, **smartphones**, **tablets** e **desktops**.
 
-![img](https://i.ibb.co/QjzvkDL/PComp.png)
+![img](https://i.ibb.co/YR0dHh4/Computador.png)
 
 <figure>
     <blockquote>
-        <p>A figura acima representa a conexão entre os principais componentes de um Computador.</p>
+        <p>A figura acima representa as conexões entre os principais componentes de um Computador.</p>
     </blockquote>
 </figure>
 
