@@ -21,7 +21,7 @@ O processo de abstração também pode ser chamado de modelagem e está intimame
     </blockquote>
 </figure>
 
-Uma forma central de abstração na computação é a abstração de linguagem: novas linguagens artificiais são desenvolvidas para expressar aspectos específicos de um sistema. Linguagens de modelagem ajudam no planejamento de um Software por exemplo.
+Uma forma central de abstração na computação é a abstração de linguagem: novas linguagens artificiais são desenvolvidas para expressar aspectos específicos de um sistema. [Linguagens de modelagem](https://en.wikipedia.org/wiki/Modeling_languages) ajudam no planejamento de um Software por exemplo.
 
 Um exemplo desse processo de abstração é o desenvolvimento geracional de linguagens de programação: da **linguagem de máquina** para a **linguagem assembly** e a **linguagem de alto nível**. Cada estágio pode ser usado como uma escadaria para o próximo estágio. A abstração da linguagem continua, por exemplo, nas [linguagens de script](https://en.wikipedia.org/wiki/Scripting_language) e nas [linguagens de programação específicas de domínio](https://en.wikipedia.org/wiki/Domain-specific_language).
 
@@ -31,10 +31,10 @@ A computação opera principalmente independentemente do mundo concreto. O hardw
 
 <figure>
     <blockquote>
-        <p>A figura acima representa as camadas de abstração existentes em Computador (Software + Hardware)</p>
+        <p>A figura acima representa as camadas de abstração existentes em um Computador (Software + Hardware)</p>
     </blockquote>
 </figure>
 
-Dentro de uma linguagem de programação, alguns recursos permitem ao programador criar novas abstrações. Isso inclui sub-rotinas, módulos, polimorfismo e componentes de software. Algumas outras abstrações, como padrões de design de software e estilos arquitetônicos operam no design de um sistema.
+Dentro de uma linguagem de programação, alguns recursos permitem ao programador criar novas abstrações. Isso inclui [sub-rotinas](https://en.wikipedia.org/wiki/Subroutine), [módulos](https://en.wikipedia.org/wiki/Module_(programming)), [polimorfismo](https://en.wikipedia.org/wiki/Polymorphism_(computer_science)) e [componentes de software](https://en.wikipedia.org/wiki/Software_component). Algumas outras abstrações, como padrões de design de software e estilos arquitetônicos operam no design de um sistema.
 
-Algumas abstrações são projetadas para interagir com outras abstrações - por exemplo, uma linguagem de programação pode conter uma interface de função externa para fazer chamadas para uma linguagem de nível inferior.
+Algumas abstrações são projetadas para interagir com outras abstrações - por exemplo, uma linguagem de programação pode conter uma [interface de função externa](https://en.wikipedia.org/wiki/Foreign_function_interface) para fazer chamadas para uma linguagem de nível inferior.
