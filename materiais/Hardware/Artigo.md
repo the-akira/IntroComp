@@ -85,6 +85,12 @@ A **unidade central de processamento (CPU)**, também chamado de processador cen
 
 A CPU executa as intruções dos códigos, manipulando dados, enquanto os outros componentes possuem uma função mais passiva, como o armazenamento de dados. Quando dizemos que um computador pode "adicionar dois números, um bilhão de vezes por segundo", esse é o CPU. 
 
+#### Gigahertz: Velocidade do CPU
+
+Um gigahertz é 1 bilhão de ciclos por segundo (um megahertz é um milhão de ciclos por segundo). Gigahertz é uma medida de velocidade, muito aproximadamente a taxa que uma CPU pode fazer sua operação mais simples por segundo. O Gigahertz não diz com precisão a rapidez com que uma CPU realiza o trabalho, mas é aproximadamente correlacionada. 
+
+CPUs com mais gigahertz também tendem a ser mais custosos para produzir e consomem mais energia (e, como resultado, emitem mais calor) - um grande desafio é colocar CPUs rápidas em pequenos dispositivos como telefones. A empresa ARM é famosa por produzir chips muito produtivos com potência e calor mínimos. Atualmente, quase todos os telefones celulares usam CPUs ARM.
+
 #### Exemplos
 
 - Executar um script que imprime informações na tela e faz cálculos matemáticos.

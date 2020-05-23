@@ -183,3 +183,36 @@ O valor ASCII de | = 124 = 7c
 O valor ASCII de } = 125 = 7d
 O valor ASCII de ~ = 126 = 7e
 ```
+
+### Kilobytes, Megabytes, Gigabytes e Terabytes
+
+O tamanho das informações no computador é medido principalmente em **kilobytes**, **megabytes**, **gigabytes** e **terabytes**.
+
+#### Kilobyte ou KB
+
+- Kilobyte KB - cerca de 1 mil bytes
+- Um email sem imagens tem cerca de 2 KB
+- Um documento de cinco páginas pode ter 100 KB
+- O texto é compacto, exigindo poucos bytes em comparação com imagens, som ou vídeo
+- **Exemplo**: 23.000 bytes têm cerca de 23 KB
+
+Um kilobyte (KB) é uma coleção de cerca de 1000 bytes. Uma página de texto alfabético romano comum leva cerca de 2 kilobytes para armazenar (cerca de um byte por letra). Um e-mail curto típico também ocuparia apenas 1 ou 2 kilobytes. O texto é um dos tipos de dados mais naturalmente compactos, com aproximadamente um byte, necessário para armazenar cada letra. Em alfabetos não romanos, como o mandarim, o armazenamento ocupa 2 ou 4 bytes por "letra", o que ainda é bastante compacto comparado ao áudio e imagens.
+
+#### Megabyte ou MB
+
+- Megabyte (MB) - cerca de 1 milhão de bytes ou 1000 KB
+- O áudio MP3 é de cerca de 1 megabyte por minuto
+- Uma imagem digital de alta qualidade tem cerca de 2-5 megabytes
+- **Exemplo**: 45,400 KB é 45.4 MB
+
+Um megabyte tem cerca de 1 milhão de bytes (ou cerca de 1000 kilobytes). Um arquivo de áudio MP3 de alguns minutos ou uma imagem de 10 milhões de pixels de uma câmera digital normalmente ocupa alguns megabytes. A regra geral para o áudio MP3 é que 1 minuto de áudio ocupa cerca de 1 megabyte. Dados de áudio e imagem e vídeo normalmente armazenados em formato "compactado", sendo o MP3 um exemplo. Um disco de CD de dados armazena cerca de 700 MB. O áudio em um CD não é compactado, e é por isso que ocupa muito mais espaço que o MP3. A série de bits é representada como um caminho espiral de pequenas cavidades no material prateado do disco.
+
+#### Gigabyte ou GB
+
+- Gigabyte GB = cerca de um bilhão de bytes = 1000 MB
+- GB é uma unidade comum para o hardware moderno
+- Um computador comum tem cerca de 4 GB de RAM e em média 500 GB de de armazenamento persistente
+
+#### Terabyte ou TB
+
+Um terabyte (TB) tem cerca de 1000 gigabytes, ou aproximadamente 1 trilhão de bytes. É possível obter discos rígidos de 4 TB atualmente, portanto, estamos começando o momento em que esse termo entrará em uso comum. Gigabyte também costumava ser um termo exótico, até que a lei de Moore tornou ele comum.
