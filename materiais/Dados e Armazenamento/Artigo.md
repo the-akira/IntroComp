@@ -95,86 +95,7 @@ O valor ASCII de $ = 36 = 24
 O valor ASCII de % = 37 = 25
 O valor ASCII de & = 38 = 26
 O valor ASCII de ' = 39 = 27
-O valor ASCII de ( = 40 = 28
-O valor ASCII de ) = 41 = 29
-O valor ASCII de * = 42 = 2a
-O valor ASCII de + = 43 = 2b
-O valor ASCII de , = 44 = 2c
-O valor ASCII de - = 45 = 2d
-O valor ASCII de . = 46 = 2e
-O valor ASCII de / = 47 = 2f
-O valor ASCII de 0 = 48 = 30
-O valor ASCII de 1 = 49 = 31
-O valor ASCII de 2 = 50 = 32
-O valor ASCII de 3 = 51 = 33
-O valor ASCII de 4 = 52 = 34
-O valor ASCII de 5 = 53 = 35
-O valor ASCII de 6 = 54 = 36
-O valor ASCII de 7 = 55 = 37
-O valor ASCII de 8 = 56 = 38
-O valor ASCII de 9 = 57 = 39
-O valor ASCII de : = 58 = 3a
-O valor ASCII de ; = 59 = 3b
-O valor ASCII de < = 60 = 3c
-O valor ASCII de = = 61 = 3d
-O valor ASCII de > = 62 = 3e
-O valor ASCII de ? = 63 = 3f
-O valor ASCII de @ = 64 = 40
-O valor ASCII de A = 65 = 41
-O valor ASCII de B = 66 = 42
-O valor ASCII de C = 67 = 43
-O valor ASCII de D = 68 = 44
-O valor ASCII de E = 69 = 45
-O valor ASCII de F = 70 = 46
-O valor ASCII de G = 71 = 47
-O valor ASCII de H = 72 = 48
-O valor ASCII de I = 73 = 49
-O valor ASCII de J = 74 = 4a
-O valor ASCII de K = 75 = 4b
-O valor ASCII de L = 76 = 4c
-O valor ASCII de M = 77 = 4d
-O valor ASCII de N = 78 = 4e
-O valor ASCII de O = 79 = 4f
-O valor ASCII de P = 80 = 50
-O valor ASCII de Q = 81 = 51
-O valor ASCII de R = 82 = 52
-O valor ASCII de S = 83 = 53
-O valor ASCII de T = 84 = 54
-O valor ASCII de U = 85 = 55
-O valor ASCII de V = 86 = 56
-O valor ASCII de W = 87 = 57
-O valor ASCII de X = 88 = 58
-O valor ASCII de Y = 89 = 59
-O valor ASCII de Z = 90 = 5a
-O valor ASCII de [ = 91 = 5b
-O valor ASCII de \ = 92 = 5c
-O valor ASCII de ] = 93 = 5d
-O valor ASCII de ^ = 94 = 5e
-O valor ASCII de _ = 95 = 5f
-O valor ASCII de ` = 96 = 60
-O valor ASCII de a = 97 = 61
-O valor ASCII de b = 98 = 62
-O valor ASCII de c = 99 = 63
-O valor ASCII de d = 100 = 64
-O valor ASCII de e = 101 = 65
-O valor ASCII de f = 102 = 66
-O valor ASCII de g = 103 = 67
-O valor ASCII de h = 104 = 68
-O valor ASCII de i = 105 = 69
-O valor ASCII de j = 106 = 6a
-O valor ASCII de k = 107 = 6b
-O valor ASCII de l = 108 = 6c
-O valor ASCII de m = 109 = 6d
-O valor ASCII de n = 110 = 6e
-O valor ASCII de o = 111 = 6f
-O valor ASCII de p = 112 = 70
-O valor ASCII de q = 113 = 71
-O valor ASCII de r = 114 = 72
-O valor ASCII de s = 115 = 73
-O valor ASCII de t = 116 = 74
-O valor ASCII de u = 117 = 75
-O valor ASCII de v = 118 = 76
-O valor ASCII de w = 119 = 77
+...
 O valor ASCII de x = 120 = 78
 O valor ASCII de y = 121 = 79
 O valor ASCII de z = 122 = 7a
@@ -211,7 +132,7 @@ Um megabyte tem cerca de 1 milhão de bytes (ou cerca de 1000 kilobytes). Um arq
 
 - Gigabyte GB = cerca de um bilhão de bytes = 1000 MB
 - GB é uma unidade comum para o hardware moderno
-- Um computador comum tem cerca de 4 GB de RAM e em média 500 GB de de armazenamento persistente
+- Um computador comum tem cerca de 4 GB de RAM e em média 500 GB de armazenamento persistente
 
 #### Terabyte ou TB
 
