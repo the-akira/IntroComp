@@ -38,3 +38,127 @@ A computação opera principalmente independentemente do mundo concreto. O hardw
 Dentro de uma linguagem de programação, alguns recursos permitem ao programador criar novas abstrações. Isso inclui [sub-rotinas](https://en.wikipedia.org/wiki/Subroutine), [módulos](https://en.wikipedia.org/wiki/Module_(programming)), [polimorfismo](https://en.wikipedia.org/wiki/Polymorphism_(computer_science)) e [componentes de software](https://en.wikipedia.org/wiki/Software_component). Algumas outras abstrações, como padrões de design de software e estilos arquitetônicos operam no design de um sistema.
 
 Algumas abstrações são projetadas para interagir com outras abstrações - por exemplo, uma linguagem de programação pode conter uma [interface de função externa](https://en.wikipedia.org/wiki/Foreign_function_interface) para fazer chamadas para uma linguagem de nível inferior.
+
+## Abstração e Decomposição através de Funções
+
+**Decomposição:** É uma maneira de estruturar o código, colocá-lo em módulos que fazem sentido por si próprios. Módulos que possam ser utilizados em múltiplos casos, que são capazes de isolar componentes do processo.
+
+**Abstração:** Nos permite suprimir detalhes. Nos permite esconder as especificações de um determinado cálculo e tratá-las como uma "caixa-preta"
+
+A "caixa-preta" é capaz de receber **inputs** e através de um "contrato" obtemos um **output**, sem necessariamente precisarmos saber o que há dentro dessa "caixa misteriosa".
+
+Um mecanismo muito importante que nos permite atingir Abstração e Decomposição são as **Funções**.
+
+As Funções permitem:
+
+- Dividir nosso código em **módulos**
+- Suprimir detalhes
+- Criar novos "primitivos" que podem ser reaproveitados
+
+### Computando Raíz Quadrada
+
+Vejamos um exemplo de como podemos definir uma função em Python capaz de computar a raíz quadrada.
+
+```python
+def sqrt(x):
+	"""
+	Retorna a raíz quadrada de x, se x for um quadrado perfeito
+	Caso contrário imprime um erro e retorna None
+	"""
+	resposta = 0
+	if x >= 0:
+		while resposta * resposta < x: 
+			resposta += 1
+		if resposta * resposta != x:
+			print(f'{x} não é um quadrado perfeito')
+			return None
+		else:
+			print(f'Raiz quadrade de {x} = {resposta}')
+			return resposta
+	else:
+		print(f'{x} é um número negativo')
+		return None
+```
+
+Definimos uma função chamada de **sqrt()** que recebe um parâmetro **x**. Para que possamos utilizar essa função, em outras palavras, invocá-la, precisamos chamá-la pelo seu nome e passar a ela um argumento, nesse caso, um número que desejamos computar a raíz quadrada. Vejamos exemplos.
+
+```python
+sqrt(16)
+sqrt(-3)
+sqrt(7)
+```
+
+Imediatamente nos será retornado:
+
+```
+Raiz quadrade de 16 = 4
+-3 é um número negativo
+7 não é um quadrado perfeito
+```
+
+Essa invocação conecta **x** ao valores **16**, **-3** e **7**. Essa "conexão" é local, em outras palavras, só existe nos confinamentos desse procedimento(Função), assim como a variável que definimos como o nome **resposta**, ela também é local.
+
+Essas "conexões locais" não afetam as variáveis globais na linguagem Python.
+
+De forma a compreendermos essa ideia, consideremos a função **f()**:
+
+```python
+def f(x):
+	x += 2
+	return x
+```
+
+Vamos então definir uma variável **x** e invocar a função **f()** para testarmos:
+
+```python
+x = 3
+print(f(x))
+print(x)
+```
+
+Nos será retornado:
+
+``` 
+5
+3
+```
+
+Veja que a função nos retornou o resultado **5** e o valor **3** foi preservado. Também é possível armazenarmos o resultado em uma variável:
+
+```python
+z = f(x)
+print(z)
+```
+
+O código acima irá nos trazer como **output** o valor **5**.
+
+### Determinando se uma palavra é Palíndromo
+
+![img](https://i.ibb.co/4pftv9D/Ambigram-palindrome-Wash-your-sins-not-only-your-face-in-Greek.jpg)
+
+Definindo uma função **Recursiva** para sabermos se uma palavra é **palíndromo**: 
+
+Um palíndromo é uma palavra, frase ou qualquer outra sequência de unidades (como uma cadeia de ADN; Enzima de restrição) que tenha a propriedade de poder ser lida tanto da direita para a esquerda como da esquerda para a direita. Num palíndromo, normalmente são desconsiderados os sinais ortográficos (diacríticos ou de pontuação), assim como o espaços entre palavras
+
+A palavra "palíndromo" vem das palavras gregas palin (πάλιν (πάλι, no grego moderno) "para trás, novamente") e dromos (δρόμος, "caminho, rua") - que corre em sentido inverso.
+
+```python
+def palindromo(string):
+	"""
+	Retorna True se a string for palíndromo
+	Caso contrário retorna False
+	"""
+	if len(string) <= 1:
+		return True
+	else:
+		return string[0] == string[-1] and palindromo(string[1:-1])
+```
+
+Vamos então testar se a função **palindromo()** é capaz de operar corretamente
+
+```python
+abba = palindromo('abba')
+python = palindromo('python')
+```
+
+Nos será retorna `True` para a palavra **abba** que é palíndromo e `False` para a palavra **Python** que não é palíndromo. Através de uma simples definição, conseguimos estabelecer o cálculo para descobrir se uma palavra é ou não palíndromo, sem necessariamente termos que nos preocuparmos com os detalhes computacionais internos da Função/Procedimento.
