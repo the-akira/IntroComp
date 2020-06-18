@@ -80,7 +80,7 @@ def sqrt(x):
 		return None
 ```
 
-Definimos uma função chamada de **sqrt()** que recebe um parâmetro **x**. Para que possamos utilizar essa função, em outras palavras, invocá-la, precisamos chamá-la pelo seu nome e passar a ela um argumento, nesse caso, um número que desejamos computar a raíz quadrada. Vejamos exemplos.
+Definimos uma função chamada de **[sqrt()](https://github.com/the-akira/IntroComp/blob/master/materiais/Abstra%C3%A7%C3%A3o/sqrt.py)** que recebe um parâmetro **x**. Para que possamos utilizar essa função, em outras palavras, invocá-la, precisamos chamá-la pelo seu nome e passar a ela um argumento, nesse caso, um número que desejamos computar a raíz quadrada. Vejamos exemplos.
 
 ```python
 sqrt(16)
@@ -100,7 +100,7 @@ Essa invocação conecta **x** ao valores **16**, **-3** e **7**. Essa "conexão
 
 Essas "conexões locais" não afetam as variáveis globais na linguagem Python.
 
-De forma a compreendermos essa ideia, consideremos a função **f()**:
+De forma a compreendermos essa ideia, consideremos a função **[f()](https://github.com/the-akira/IntroComp/blob/master/materiais/Abstra%C3%A7%C3%A3o/f.py)**:
 
 ```python
 def f(x):
@@ -154,11 +154,13 @@ def palindromo(string):
 		return string[0] == string[-1] and palindromo(string[1:-1])
 ```
 
-Vamos então testar se a função **palindromo()** é capaz de operar corretamente
+Vamos então testar se a função **[palindromo()](https://github.com/the-akira/IntroComp/blob/master/materiais/Abstra%C3%A7%C3%A3o/palindromo.py)** é capaz de operar corretamente
 
 ```python
 abba = palindromo('abba')
 python = palindromo('python')
+
+print(abba,python)
 ```
 
 Nos será retorna `True` para a palavra **abba** que é palíndromo e `False` para a palavra **Python** que não é palíndromo. Através de uma simples definição, conseguimos estabelecer o cálculo para descobrir se uma palavra é ou não palíndromo, sem necessariamente termos que nos preocuparmos com os detalhes computacionais internos da Função/Procedimento.
