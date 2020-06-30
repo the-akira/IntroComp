@@ -51,3 +51,90 @@ Consideramos algumas operações essenciais dos arrays:
 
 - Usado como blocos de construção para criar outras estruturas de dados, como listas de arrays, heaps, hash tables, vetores e matrizes.
 - Usado para diferentes algoritmos de ordenação como Insertion Sort, Quick Sort, Bubble Sort e Merge Sort.
+
+### Stack
+
+Uma stack é um contêiner de objetos que são inseridos e removidos de acordo com o princípio **LIFO**(*last in in first-out*). As principais operações de uma stack são respectivamente **push** e **pop**. 
+
+Uma stack é uma estrutura de dados de acesso limitado - os elementos podem ser adicionados e removidos da stack apenas na parte **superior**, **push** adiciona um item ao topo da stack, **pop** remove o item do topo. 
+
+Uma analogia útil é pensar em uma pilha de livros; você pode remover apenas o livro superior e também adicionar um novo livro na parte superior.
+
+![img](https://i.ibb.co/2gVKvYx/Stack.png)
+
+A imagem acima nos apresenta uma Stack em 4 situações diferentes:
+
+1. Ela está vazia, sem nenhum elemento
+2. Executamos a função push() e adicionamos o elemento 1 no topo
+3. Executamos a função push() e adicionamos o elemento 2 no topo
+4. Executamos a função pop() e removemos o elemento 2 do topo
+
+#### Operações em Stacks
+
+Algumas operações básicas das stacks são:
+
+- **Push**: Insere um elemento no topo da stack
+- **Pop**: Retorna o elemento do topo depois de removê-lo da stack
+- **isEmpty**: Retorna `True` se a stack estiver vazia
+- **Peek**: Retorna o elemento do topo da stack sem removê-lo
+
+#### Aplicações de Stacks
+
+- Usado para implementar chamadas de função na programação de recursão
+- Verificar parênteses balanceados em uma expressão
+
+#### Exemplo de uma Stack em Python
+
+Vejamos um exemplo de uma simples Stack implementada com a linguagem Python
+
+```python
+class Stack:
+	def __init__(self):
+		self.items = []
+
+	def is_empty(self):
+		return self.items == []
+
+	def push(self, item):
+		self.items.append(item)
+
+	def pop(self):
+		return self.items.pop()
+
+	def peek(self):
+		return self.items[len(self.items)-1]
+
+	def size(self):
+		return len(self.items)
+
+	def clear(self):
+		self.items = []
+
+	def display(self):
+		for item in self.items:
+			print(item)
+```
+
+Inicializando a Stack:
+
+```python
+s = Stack()
+```
+
+Inserindo elementos na Stack:
+
+```python
+for item in range(1,8):
+	s.push(item)
+```
+
+Executando operações de Remoção, Verificando o Tamanho, Verificando se ela está Vazia, Verificando o elemento do Topo e apresentando todos os elementos:
+
+```python
+print(f"Elemento removido da Stack: {s.pop()}")
+print(f"Elemento removido da Stack: {s.pop()}")
+print(f"Tamanho da Stack: {s.size()}")
+print(f"Stack está vazia: {s.is_empty()}")
+print(f"Elemento do topo da Stack: {s.peek()}")
+s.display()
+```
