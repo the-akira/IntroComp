@@ -266,3 +266,32 @@ As operações comuns em Linked Lists são:
 
 - Usado para [gerenciamento de tabela de símbolos](http://jcsites.juniata.edu/faculty/rhodes/lt/sytbmgmt.htm) no design de compiladores.
 - Utilizado na alternância de programas usando `Alt + Tab` (implementado usando Circular Linked List).
+
+### Trees
+
+Uma [Tree](https://en.wikipedia.org/wiki/Tree_(data_structure)) é uma estrutura hierárquica ao qual os dados são organizados hierarquicamente e são vinculados. Essa estrutura é diferente de uma Linked List, enquanto que, em uma Linked List, os itens são vinculados em uma ordem linear.
+
+A figura a seguir apresenta uma Tree com as terminologias básicas indicadas:
+
+![img](https://i.ibb.co/8gTDNpj/Tree.png)
+
+Consistindo de vértices(*nodes*) e *edges* que os conectam. As Trees são semelhantes aos grafos, mas o ponto principal que diferencia uma Tree do Grafo é que um ciclo não pode existir em uma Tree.
+
+Vários tipos de Trees foram desenvolvidos ao longo das últimas décadas, para atender a determinadas aplicações e atender a certas restrições. Alguns exemplos são:
+
+- N-ary Tree
+- Balanced Tree
+- Binary Tree
+- Binary Search Tree
+- AVL Tree
+- Red Black Tree
+- 2-3 Tree
+
+Sendo a Binary Tree e Binary Search Tree mais comumente utilizadas.
+
+#### Aplicações de Trees
+
+- **Binary Trees**: Usadas para implementar analisadores de expressão e solucionadores de expressão.
+- **Binary Search Tree**: Usada em muitos aplicativos de pesquisa em que os dados estão constantemente entrando e saindo
+- **Decision Trees**: Utilizadas para tomadas de decisão em problemas de Machine Learning
+- **Abstract Syntax Tree**: Amplamente utilizada em compiladores para representar a estrutura do código do programa.
