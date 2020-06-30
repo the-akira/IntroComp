@@ -351,7 +351,7 @@ Os dois tipos principais de Graphs são respectivamente **Direcionados** e **Nã
 
 Diz-se que um graph G é um graph direcionado se todas as suas edges tiverem uma direção indicando qual é o vertice inicial e qual é o vertice final.
 
-![img](https://i.ibb.co/kgcxD9c/Directed-Graph.png)
+![img](https://i.ibb.co/wLYXKtC/Directed-Graph.png)
 
 Denotamos que **(u,v)** é incidente de ou parte de um vertice **u** e é incidente em ou entra em um vertice **v**.
 
