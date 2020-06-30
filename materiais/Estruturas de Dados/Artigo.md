@@ -138,3 +138,94 @@ print(f"Stack está vazia: {s.is_empty()}")
 print(f"Elemento do topo da Stack: {s.peek()}")
 s.display()
 ```
+
+### Queue
+
+Uma Queue é um contêiner de objetos (uma coleção linear) que são inseridos e removidos de acordo com o princípio **FIFO**(*first-in first-out*).
+
+![img](https://i.ibb.co/0X9vdXq/FIFO.png)
+
+Um grande exemplo de uma Queue é uma fila de estudantes aguardando para o atendimento de um restaurante universitário.
+
+As operações mais comuns de uma Queue são respectivamente: **enqueue** que significa inserir um item na parte de trás da fila e **dequeue** que significa remover o item da frente da Queue.
+
+![img](https://i.ibb.co/9qcVjqm/Queue.png)
+
+A diferença entre **Stacks** e **Queues** está na remoção. Em uma stack, removemos o item adicionado mais recentemente; em uma queue, removemos o item adicionado menos recentemente.
+
+#### Operações em Queues
+
+As principais operações que podemos executar em uma Queue são:
+
+- **Enqueue**: Insere um elemento no final da Queue
+- **Dequeue**: Remove um elemento do começo da Queue
+- **isEmpty**: Retorna `True` se a Queue estiver vazia
+- **Rear**: Retorna o último elemento da Queue
+- **Front**: Retorna o primeiro elemento da Queue
+
+#### Aplicações de Queues
+
+- Utilizadas para gerenciar threads em multithreading.
+- Usadas para implementar sistemas de queuing, como por exemplo [priority queues](https://en.wikipedia.org/wiki/Priority_queue)
+
+#### Exemplo de uma Queue em Python
+
+Vejamos um exemplo de uma simples Queue implementada com a linguagem Python
+
+```python
+class Queue:
+	def __init__(self):
+		self.items = []
+
+	def is_empty(self):
+		return self.items == []
+
+	def enqueue(self, item):
+		self.items.append(item)
+
+	def dequeue(self):
+		if len(self.items) < 1:
+			return None
+		return self.items.pop(0)
+
+	def size(self):
+		return len(self.items)
+
+	def front(self):
+		return self.items[0]
+
+	def rear(self):
+		return self.items[-1]
+
+	def clear(self):
+		self.items = []
+
+	def display(self):
+		for item in self.items:
+			print(item)
+```
+
+Inicializando a Queue:
+
+```python
+q = Queue()
+```
+
+Inserindo elementos na Queue:
+
+```python
+for item in range(1,8):
+	q.enqueue(item)
+```
+
+Realizando operações como Remoção, Verificando o elemento da Frente e o Último, Verificando o Tamanho, Verificando se ela está Vazia e por fim Apresentando todos os elementos presentes nela:
+
+```python
+print(f"Elemento removido da fila: {q.dequeue()}")
+print(f"Elemento removido da fila: {q.dequeue()}")
+print(f"Primeiro elemento da fila: {q.front()}")
+print(f"Último elemento da fila: {q.rear()}") 
+print(f"Tamanho da fila: {q.size()}")
+print(f"Fila está vazia? {q.is_empty()}")
+q.display()
+```
