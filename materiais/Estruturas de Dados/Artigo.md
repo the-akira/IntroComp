@@ -52,6 +52,77 @@ Consideramos algumas operações essenciais dos arrays:
 - Usado como blocos de construção para criar outras estruturas de dados, como listas de arrays, heaps, hash tables, vetores e matrizes.
 - Usado para diferentes algoritmos de ordenação como Insertion Sort, Quick Sort, Bubble Sort e Merge Sort.
 
+#### Exemplo de Arrays em C
+
+No exemplo a seguir inicializaremos os arrays:
+
+- **A**: Com capacidade de 5 elementos.
+- **B**: Com capacidade de 5 elementos, inicializado com os elementos {1,2,3,4,5}
+- **C**: Com capacidade de 10 elementos, inicializado com os elementos {2,8,10}
+- **D**: Com capacidade de 7 elementos, todos inicializados com 0
+- **E**: Com capacidade não informada, inicializado com os elementos {1,3,5,7,9,11}
+
+Todos eles serão alocados em [Stack](https://gribblelab.org/CBootCamp/7_Memory_Stack_vs_Heap.html) da Memória.
+
+```c
+#include <stdio.h>
+
+int main()
+{
+	// Criando arrays em Stack
+	int A[5];
+	int B[5]={1,2,3,4,5};
+	int C[10]={2,8,10};
+	int D[7]={0};
+	int E[]={1,3,5,7,9,11};	
+}
+```
+
+Dentro da função **main()**, vamos agora imprimir os elementos dos arrays. Especificamente do array **E** iremos imprimir o endereço em memória do elemento, o elemento respectivo e o seu tamanho em bytes:
+
+```c
+	printf("%d\n",A[1]);
+	printf("%d\n",B[0]);
+	printf("%d\n",C[2]);
+	printf("%d\n",D[4]);
+
+	printf("---\n");
+
+	for(int i=0; i<5; i++)
+	{
+		printf("Endereço=%p\n",&E[i]);
+		printf("Valor=%d\n",E[i]);
+		printf("Tamanho em bytes=%lu\n",sizeof(E[i]));
+	}	
+```
+
+Vejamos agora um exemplo de como podemos alocar um array em [Heap](https://gribblelab.org/CBootCamp/7_Memory_Stack_vs_Heap.html), para isso contaremos com a biblioteca **stdlib** e a função **malloc()**:
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+	// Criando um array em Heap
+	int *p;
+	p = (int *)malloc(2*sizeof(int));
+	p[0]=13;
+	p[1]=17;
+	for(int i=0; i<2; i++)
+		printf("%d\n",p[i]);
+	free(p);
+}
+```
+
+Declaramos um ponteiro `*p` e utilizamos a função **malloc()** e multiplicamos por **2** a função **sizeof()** passando um int como argumento, nos fornecendo assim a capacidade de dois elementos. Essa é uma maneira de alocação dinâmica em memória.
+
+Enfim declaramos o primeiro elemento do array como **13** e o segundo como **17** e posteriormente usamos um **for loop** para imprimirmos os valores no console.
+
+Finalmente usamos a função **free()** para liberar em memória, isso é importante pois evita problemas de vazamento de memória([memory leak](https://en.wikipedia.org/wiki/Memory_leak)).
+
+Caso tenha dúvida de como compilar os programas, confira este [Link](https://github.com/the-akira/IntroComp/blob/master/Exemplos%20C/Compilar.md).
+
 ### Stack
 
 Uma stack é um contêiner de objetos que são inseridos e removidos de acordo com o princípio **LIFO**(*last in in first-out*). As principais operações de uma stack são respectivamente **push** e **pop**. 
