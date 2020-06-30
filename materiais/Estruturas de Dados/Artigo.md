@@ -21,7 +21,7 @@ Com base em diferentes cenários, os dados precisam ser armazenados em um format
 - Queues
 - Linked Lists
 - Trees
-- Heap
+- Heaps
 - Graphs
 - Hash Tables
 
@@ -336,3 +336,47 @@ As operações mais comuns em Heaps são:
 - As funções de Queue podem ser implementadas usando Heaps dentro do tempo **O(log n)**.
 - Usado para encontrar o valor menor(ou maior) de **kᵗʰ** em uma determinado array.
 - Algoritmos de Grafos: Usando heaps como estruturas internas de dados transversais, o tempo de execução será reduzido por ordem polinomial. Exemplos de tais problemas são [o algoritmo de árvore de abrangência mínima de Prim](https://en.wikipedia.org/wiki/Prim%27s_algorithm) e o [algoritmo de caminho mais curto de Dijkstra](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm).
+
+### Graphs
+
+Um **Graph** consiste em um conjunto finito de **vertices** ou **nodes** e um conjunto de **edges** conectando esses **vertices**.
+
+A ordem de um Graph é o número de vertices no graph. O tamanho de um graph é o número de edges no graph.
+
+Diz-se que dois **nodes** são adjacentes se estiverem conectados um ao outro pela mesma edge.
+
+Os dois tipos principais de Graphs são respectivamente **Direcionados** e **Não-Direcionados**.
+
+#### Graphs Direcionados
+
+Diz-se que um graph G é um graph direcionado se todas as suas edges tiverem uma direção indicando qual é o vertice inicial e qual é o vertice final.
+
+![img](https://i.ibb.co/kgcxD9c/Directed-Graph.png)
+
+Denotamos que **(u,v)** é incidente de ou parte de um vertice **u** e é incidente em ou entra em um vertice **v**.
+
+Então de acordo com a imagem temos que:
+
+```
+[(0,0),(0,4),(4,2),(2,3),(2,1),(1,0)]
+```
+
+**Auto-Loops**: Edges de um vertice para ele mesmo.
+
+#### Graphs Não-Direcionados
+
+Diz-se que um graph G é um graph não-direcionado se todas as suas edges não tiverem direção. Podem ocorrer nos dois sentidos entre os dois vértices.
+
+![img](https://i.ibb.co/XJVbdrM/Graph.png)
+
+Se um vertice não está conectado a nenhum node do graph, ele é dito ser **isolado**.
+
+Em linguagens de programação, graphs podem ser representados normalmente de duas formas: **Adjacency Matrix** e **Adjacency List**.
+
+Algoritmos comuns de deslocamento de graphs são: **Breadth First Search** e **Depth First Search**.
+
+#### Aplicações de Graphs
+
+- Usado para representar redes de mídia social. Cada usuário é um vértice e, quando os usuários se conectam, criam uma edge.
+- Usado para representar páginas da web e links pelos mecanismos de pesquisa. As páginas da Internet na Internet são vinculadas entre si por hiperlinks. Cada página é um vértice e o hiperlink entre duas páginas é uma edge. Usado para a rankeamento de páginas por algoritmos do Google.
+- Usado para representar locais e rotas no GPS. Locais são vértices e as rotas que conectam locais são edges. Usado para calcular a rota mais curta entre dois locais.
