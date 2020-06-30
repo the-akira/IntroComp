@@ -52,7 +52,7 @@ Consideramos algumas operações essenciais dos arrays:
 - Usado como blocos de construção para criar outras estruturas de dados, como listas de arrays, heaps, hash tables, vetores e matrizes.
 - Usado para diferentes algoritmos de ordenação como Insertion Sort, Quick Sort, Bubble Sort e Merge Sort.
 
-#### Exemplo de Arrays em C
+#### Exemplos de Arrays em C
 
 No exemplo a seguir inicializaremos os arrays:
 
@@ -96,6 +96,8 @@ Dentro da função **main()**, vamos agora imprimir os elementos dos arrays. Esp
 	}	
 ```
 
+**Importante**: Veja que ao imprimirmos o segundo elemento do array **A**, nos será trazido um valor "estranho", isso porque não há nenhum valor atribuído a este Array, logo será impresso o que chamamos de [garbage value](https://www.quora.com/What-do-you-mean-by-a-garbage-value-in-a-variable)
+
 Vejamos agora um exemplo de como podemos alocar um array em [Heap](https://gribblelab.org/CBootCamp/7_Memory_Stack_vs_Heap.html), para isso contaremos com a biblioteca **stdlib** e a função **malloc()**:
 
 ```c
@@ -115,7 +117,7 @@ int main()
 }
 ```
 
-Declaramos um ponteiro `*p` e utilizamos a função **malloc()** e multiplicamos por **2** a função **sizeof()** passando um int como argumento, nos fornecendo assim a capacidade de dois elementos. Essa é uma maneira de alocação dinâmica em memória.
+Declaramos um ponteiro `*p` e utilizamos a função **malloc()** e multiplicamos por **2** a função **sizeof()** passando um **int** como argumento, nos fornecendo assim a capacidade de dois elementos. Essa é uma maneira de alocação dinâmica em memória.
 
 Enfim declaramos o primeiro elemento do array como **13** e o segundo como **17** e posteriormente usamos um **for loop** para imprimirmos os valores no console.
 
