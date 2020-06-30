@@ -73,10 +73,10 @@ A imagem acima nos apresenta uma Stack em 4 situações diferentes:
 
 Algumas operações básicas das stacks são:
 
-- **Push**: Insere um elemento no topo da stack
-- **Pop**: Retorna o elemento do topo depois de removê-lo da stack
-- **isEmpty**: Retorna `True` se a stack estiver vazia
-- **Peek**: Retorna o elemento do topo da stack sem removê-lo
+- **Push**: Insere um elemento no topo da stack.
+- **Pop**: Retorna o elemento do topo depois de removê-lo da stack.
+- **isEmpty**: Retorna `True` se a stack estiver vazia.
+- **Peek**: Retorna o elemento do topo da stack sem removê-lo.
 
 #### Aplicações de Stacks
 
@@ -144,6 +144,13 @@ s.display()
 Uma Queue é um contêiner de objetos (uma coleção linear) que são inseridos e removidos de acordo com o princípio **FIFO**(*first-in first-out*).
 
 ![img](https://i.ibb.co/0X9vdXq/FIFO.png)
+
+A figura acima nos apresenta uma Queue em 4 situações diferentes:
+
+1. A Queue está vazia, sem nenhum elemento.
+2. Utilizamos a operação enqueue() e inserimos o elemento 1 nela.
+3. Usamos a operação enqueue() e inserimos o elemento 2 nela.
+4. Executamos a operação dequeue() e removemos o elemento 1 dela.
 
 Um grande exemplo de uma Queue é uma fila de estudantes aguardando para o atendimento de um restaurante universitário.
 
