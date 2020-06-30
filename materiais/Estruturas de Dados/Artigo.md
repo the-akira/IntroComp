@@ -380,3 +380,49 @@ Algoritmos comuns de deslocamento de graphs são: **Breadth First Search** e **D
 - Usado para representar redes de mídia social. Cada usuário é um vértice e, quando os usuários se conectam, criam uma edge.
 - Usado para representar páginas da web e links pelos mecanismos de pesquisa. As páginas da Internet na Internet são vinculadas entre si por hiperlinks. Cada página é um vértice e o hiperlink entre duas páginas é uma edge. Usado para a rankeamento de páginas por algoritmos do Google.
 - Usado para representar locais e rotas no GPS. Locais são vértices e as rotas que conectam locais são edges. Usado para calcular a rota mais curta entre dois locais.
+
+### Hash Table
+
+Na computação, uma **Hash Table**(também conhecida como **Hash Map**) é uma estrutura de dados que implementa um tipo de dados abstratos de array associativo, uma estrutura que pode mapear **chaves** para **valores**. 
+
+Uma **Hash Table** usa uma [função de hash](https://en.wikipedia.org/wiki/Hash_function) para calcular um **índice**, também chamado de **código de hash**, em uma array de *buckets* ou *slots*, a partir dos quais o valor desejado pode ser encontrado. Durante a pesquisa, a chave é "hashed" e o hash resultante indica onde o valor correspondente é armazenado.
+
+![img](https://i.ibb.co/bH1FJ5X/Hash-Table.png)
+
+O **endereçamento direto** usa o mapeamento individual entre os valores e as chaves ao armazenar em uma tabela. No entanto, há um problema com essa abordagem quando há um grande número de pares de valores-chave. A tabela será enorme com tantos registros e poderá ser impraticável ou até impossível de ser armazenada, dada a memória disponível em um computador típico. Para evitar esse problema, usamos tabelas de hash.
+
+#### Desempenho
+
+O desempenho da estrutura de dados de hash depende de três fatores importantes:
+
+- Função Hash: Uma função especial denominada função de hash**(h)** é usada para superar o problema mencionado no endereçamento direto.
+
+No acesso direto, um valor com a **chave k** é armazenado no **slot k**. Usando a função hash, calculamos o índice da tabela (**slot**) para a qual cada valor vai. O valor calculado usando a função hash para uma determinada chave é chamado de valor hash, que indica o índice da tabela para a qual o valor está mapeado.
+
+```
+h(x) = x % m
+```
+
+- **h**: Função hash
+- **x**: Chave no qual o valor hash deve ser determinado
+- **m**: Tamanho da tabela hash(número de slots disponíveis)
+
+- Tamanho da Hash Table
+
+- Método de Manuseio de Colisão
+
+Podemos resolver colisões selecionando uma função de hash adequada **h** e usar técnicas como **chaining** e **open addressing**.
+
+Em muitas situações, as Hash Tables acabam sendo, em média, mais eficientes do que as search trees ou qualquer outra estrutura de pesquisa de tabela. Por esse motivo, eles são amplamente utilizados em muitos tipos de software, principalmente para arrays associativos, indexação de bancos de dados, caches e conjuntos.
+
+A principal vantagem das Hash Tables sobre outras estruturas de dados de tabela é a velocidade. Essa vantagem é mais aparente quando o número de entradas é grande. As tabelas de hash são particularmente eficientes quando o número máximo de entradas pode ser previsto com antecedência, para que o bucket array possa ser alocada uma vez com o tamanho ideal e nunca redimensionado.
+
+Se o conjunto de pares de valores-chave for fixo e conhecido com antecedência(portanto, inserções e exclusões não são permitidas), é possível reduzir o custo médio de pesquisa por uma escolha cuidadosa da função hash, tamanho da tabela de bucket e estruturas de dados internas. Em particular, é possível conceber uma função de hash isenta de colisões ou mesmo perfeita. Nesse caso, as chaves não precisam ser armazenadas na tabela.
+
+Muitas linguagens de programação fornecem funcionalidade de tabela de hash, como matrizes associativas internas ou como módulos de biblioteca padrão.
+
+#### Aplicações de Hash Tables
+
+- Usadas para implementar índices de banco de dados.
+- Usadas para implementar arrays associativos.
+- Usadas para implementar a estrutura de dados "conjunto".
