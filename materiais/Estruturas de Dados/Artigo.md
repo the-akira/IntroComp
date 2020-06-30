@@ -395,7 +395,7 @@ O **endereçamento direto** usa o mapeamento individual entre os valores e as ch
 
 O desempenho da estrutura de dados de hash depende de três fatores importantes:
 
-- Função Hash: Uma função especial denominada função de hash(**h**) é usada para superar o problema mencionado no endereçamento direto.
+1. Função Hash: Uma função especial denominada função de hash(**h**) é usada para superar o problema mencionado no endereçamento direto.
 
 No acesso direto, um valor com a **chave k** é armazenado no **slot k**. Usando a função hash, calculamos o índice da tabela (**slot**) para a qual cada valor vai. O valor calculado usando a função hash para uma determinada chave é chamado de valor hash, que indica o índice da tabela para a qual o valor está mapeado.
 
@@ -405,9 +405,9 @@ h(x) = x % m
 
 **h**: Função hash, **x**: Chave no qual o valor hash deve ser determinado, **m**: Tamanho da tabela hash(número de slots disponíveis)
 
-- Tamanho da Hash Table
+2. Tamanho da Hash Table
 
-- Método de Manuseio de Colisão
+3. Método de Manuseio de Colisão
 
 Podemos resolver colisões selecionando uma função de hash adequada **h** e usar técnicas como **chaining** e **open addressing**.
 
