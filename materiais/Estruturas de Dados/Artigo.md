@@ -229,3 +229,40 @@ print(f"Tamanho da fila: {q.size()}")
 print(f"Fila está vazia? {q.is_empty()}")
 q.display()
 ```
+
+### Linked Lists
+
+Uma Linked List é uma coleção linear de elementos de dados, cuja ordem não é dada por seu posicionamento físico na memória. Em vez disso, cada elemento aponta para o próximo. É uma estrutura de dados que consiste em uma coleção de *nodes* que juntos representam uma sequência. 
+
+![img](https://i.ibb.co/nRbjdC6/Linked-List.png)
+
+Na sua forma mais básica, cada *node* contém: dados e uma referência (em outras palavras, um link) para o próximo *node* na sequência. Essa estrutura permite a inserção ou remoção eficiente de elementos de qualquer posição na sequência durante a iteração. Variantes mais complexas adicionam links adicionais, permitindo a inserção ou remoção mais eficiente de *nodes* em posições arbitrárias.
+
+Há também um ponteiro de *head*, que aponta para o primeiro elemento da Linked List e, se a lista estiver vazia, simplesmente aponta para *NULL* ou nada.
+
+Sumarizando temos então que:
+
+- Elementos de uma Linked List são conhecidos como **nodes**.
+- Cada **node** contém uma **key/data** e um **ponteiro/endereço/link** para o **node** sucessor, conhecido como **next**.
+- O atributo de nome **head** é um ponteiro para o primeiro elemento da Linked List.
+- O último elemento da Linked List é conhecido como **tail**.
+
+Existem diferentes tipos/variações de Linked Lists:
+
+- **Singly Linked List**: A travessia de itens pode ser feita somente na direção direta.
+- **Doubly Linked List**: A travessia de itens pode ser feita nas direções para frente e para trás. Os *nodes* consistem em um ponteiro adicional conhecido como **prev**, apontando para o *node* anterior.
+- **Circular Linked List**: Linked Lists em que o ponteiro **prev** da *head* aponta para o *tail*(último elemento) e o próximo ponteiro da *tail* aponta para a *head*, formando assim uma estrutura circular.
+
+#### Operações em Linked Lists
+
+As operações comuns em Linked Lists são:
+
+- **Search**: Encontre o primeiro elemento com uma **key K** na Linked List fornecida por uma busca linear simples e retorne um ponteiro para esse elemento.
+- **Insert**: Insere uma **key** na Linked List. Uma inserção pode ser feita de três maneiras diferentes: insira no início da lista, insira no final da lista ou insira no meio da lista.
+- **Delete**: Remove um elemento x de uma determinada Linked List. Não é possível excluir um *node* em uma única etapa. Uma exclusão pode ser feita de três maneiras diferentes: exclua do início da lista, exclua do final da lista ou exclua do meio da lista.
+- **isEmpty**: Retorna `True` se a Linked List estiver vazia.
+
+#### Aplicações de Linked Lists
+
+- Usado para [gerenciamento de tabela de símbolos](http://jcsites.juniata.edu/faculty/rhodes/lt/sytbmgmt.htm) no design de compiladores.
+- Utilizado na alternância de programas usando `Alt + Tab` (implementado usando Circular Linked List).
