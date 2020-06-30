@@ -403,9 +403,7 @@ No acesso direto, um valor com a **chave k** é armazenado no **slot k**. Usando
 h(x) = x % m
 ```
 
-- **h**: Função hash
-- **x**: Chave no qual o valor hash deve ser determinado
-- **m**: Tamanho da tabela hash(número de slots disponíveis)
+**h**: Função hash, **x**: Chave no qual o valor hash deve ser determinado, **m**: Tamanho da tabela hash(número de slots disponíveis)
 
 - Tamanho da Hash Table
 
