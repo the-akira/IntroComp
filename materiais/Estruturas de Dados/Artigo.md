@@ -302,3 +302,37 @@ Sendo a Binary Tree e Binary Search Tree mais comumente utilizadas.
 - **Binary Search Tree**: Usada em muitos aplicativos de pesquisa em que os dados estão constantemente entrando e saindo
 - **Decision Trees**: Utilizadas para tomadas de decisão em problemas de Machine Learning
 - **Abstract Syntax Tree**: Amplamente utilizada em compiladores para representar a estrutura do código do programa.
+
+### Heaps
+
+Um **Heap** é um caso especial de uma árvore binária em que os *parent nodes* são comparados aos *child nodes* com seus valores e são organizados de acordo.
+
+Existem dois tipos de Heaps:
+
+1. **Min Heap**: A *key* do *parent* é menor ou igual à de seus *childs*. Isso é chamado de propriedade min-heap. A *root* conterá o valor mínimo da pilha.
+
+![img](https://i.ibb.co/JRrmNWN/MinHeap.png)
+
+2. **Max Heap**: A *key* do *parent* é maior ou igual à de seus *childs*. Isso é chamado de propriedade max-heap. A *root* conterá o valor máximo da pilha.
+
+![img](https://i.ibb.co/KcPhDQc/MaxHeap.png)
+
+#### Operações em Heaps
+
+As operações mais comuns em Heaps são:
+
+- **find-max** (ou **find-min**): Localiza um item máximo de um heap máximo ou um item mínimo de um heap mínimo, respectivamente (também conhecido como peek).
+- **insert**: Adiciona uma nova *key* a heap (também conhecido como push).
+- **extract-max** (ou **extract-min**): Retorna o *node* de valor máximo de uma heap máxima [ou valor mínimo de uma heap mínima] após removê-lo da heap (também conhecido como pop).
+- **create-heap**: Cria uma heap vazia.
+- **heapify**: Crie uma heap a partir de um determinado conjunto de elementos.
+- **size**: Retorna o número de itens na pilha.
+- **is-empty**: Retorne `False` se a heap estiver vazia; caso contrário, `False`.
+
+#### Aplicações da Heap
+
+- Utilizada no algoritmo **Heap Sort**.
+- Usado para implementar filas de prioridade, pois os valores de prioridade podem ser ordenados de acordo com a propriedade heap em que o heap pode ser implementado usando uma array.
+- As funções de Queue podem ser implementadas usando Heaps dentro do tempo **O(log n)**.
+- Usado para encontrar o valor menor(ou maior) de **kᵗʰ** em uma determinado array.
+- Algoritmos de Grafos: Usando heaps como estruturas internas de dados transversais, o tempo de execução será reduzido por ordem polinomial. Exemplos de tais problemas são [o algoritmo de árvore de abrangência mínima de Prim](https://en.wikipedia.org/wiki/Prim%27s_algorithm) e o [algoritmo de caminho mais curto de Dijkstra](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm).
