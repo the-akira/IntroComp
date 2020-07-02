@@ -8,7 +8,7 @@ O termo "bug" foi usado pela pioneira em informática Grace Hopper, que divulgou
 
 <figure>
     <blockquote>
-        <p>Uma página do registro do computador eletromecânico de Harvard Mark II, com uma mariposa morta que foi removida do dispositivo.</p>
+        <p>Uma página do registro do computador eletromecânico Harvard Mark II, com uma mariposa morta que foi removida do dispositivo, evento que originou o termo bug.</p>
     </blockquote>
 </figure>
 
