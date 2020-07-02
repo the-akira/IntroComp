@@ -6,7 +6,7 @@
 - Contexto Histórico
 - Controle de Fluxo e Iteração
 - Dados e Armazenamento
-- Debugging e Testes
+- Debugging
 - Eficiência e Ordem de Crescimento
 - Estruturas de Dados
 - Hardware
