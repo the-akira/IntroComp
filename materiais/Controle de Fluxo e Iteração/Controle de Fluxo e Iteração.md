@@ -190,7 +190,7 @@ while num > 0:
 
 ### Vantagens de Utilizar Estruturas de Controle de Fluxo
 
-- Estruturas de controle tornam claro a ordem de execução de maneira transparente
+- Estruturas de controle tornam claro a ordem de execução do programa de maneira transparente
 - Utilizando seções menores de código permite que diversos programadores trabalharem em um programa ao mesmo tempo, aumentando assim a produtividade
 - Estas estruturas auxiliam os programadores a encontrarem erros antes do programa ser executado
 - Ao dividir grandes quantidades de código em seções menores os programadores podem atualizar os programas de forma fácil ao editarem seções individuais de texto
