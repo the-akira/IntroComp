@@ -4,7 +4,7 @@ A história por trás do termo **[Debugging](https://en.wikipedia.org/wiki/Debug
 
 O termo "bug" foi usado pela pioneira em informática Grace Hopper, que divulgou a causa de um mau funcionamento em um computador eletromecânico inicial. 
 
-![img](https://i.ibb.co/ZS4Tb1H/firstbug.png)
+![img](https://i.ibb.co/gPKPdBn/fbug.jpg)
 
 <figure>
     <blockquote>
@@ -44,3 +44,5 @@ Aspectos importantes que nos ajudam no processo de Debugging:
 - Formular uma hipótese que deve ser consistente com os dados.
 - Construir e executar um experimento que possa ser **repetido**.
 - Para que esse experimento seja útil, ele deve possuir o potencial de refutar a hipótese.
+
+Para ver comandos experimentais de Debugging com o [GNU Project Debugger](https://www.gnu.org/software/gdb/) visite este [Tutorial](https://github.com/the-akira/IntroComp/blob/master/materiais/Debugging/GDB.md)
