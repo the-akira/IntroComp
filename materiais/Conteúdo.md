@@ -1,9 +1,7 @@
 # Conteúdo
 
 - Abstração
-- Aleatoriedade
 - Algoritmos de Busca e Ordenação
-- Contexto Histórico
 - Controle de Fluxo e Iteração
 - Dados e Armazenamento
 - Debugging
@@ -11,7 +9,6 @@
 - Estruturas de Dados
 - Hardware
 - Linguagens de Programação
-- Programação Dinâmica
-- Recursão
-- Simulações
+- Recursão e Programação Dinâmica
+- Simulações e Aleatoriedade
 - Software
