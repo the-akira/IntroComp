@@ -35,7 +35,7 @@ Algoritmicamente: É uma maneira de desenvolver soluções para problemas atrav�
 
 Semanticamente: Uma técnica de programação em que uma função chama a si mesma. É importante ressaltar que em programação o objetivo é que não haja recursão infinita, para isso é necessário definir **1 ou mais base cases** que sejam fáceis de resolver.
 
-## Soluções Iterativas
+## Solução Iterativa
 
 Através do uso de constructos de Looping (**while** e **for** loops) somos capazes de criar algoritmos iterativos.
 
@@ -75,6 +75,8 @@ resultado = (1+(3+(5+(7+9))))
 			resultado = (1+24)
 				resultado = 25
 ```
+
+## Solução Recursiva
 
 Como podemos capturar essa idéia e transformá-la em um programa Python? Primeiro, vamos reafirmar o problema da soma em termos de listas Python. Podemos dizer que a soma da lista `lista` é a soma do primeiro elemento da lista (`lista[0]`) e a soma dos números no restante da lista (`lista[1:]`). Para indicá-lo de forma funcional:
 
