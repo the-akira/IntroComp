@@ -219,7 +219,7 @@ A imagem a seguinte apresenta uma árvore com 8 níveis de ramificações
 
 ![img](https://i.ibb.co/M99yLZx/fractaltree.png)
 
-A seguir temos o código responsável por desenhar a árvore
+A seguir temos o código responsável por desenhar a árvore, observe que estamos utilizando o módulo [turtle](https://docs.python.org/3/library/turtle.html) para nos auxiliar na tarefa de desenhos.
 
 ```python
 import turtle
@@ -270,7 +270,7 @@ if __name__ == '__main__':
     turtle.done()
 ```
 
-O parâmetro `WIDTH` define a largura da árvore, `BRANCH_LENGTH` define o comprimento de cada galho e `ROTATION_LENGTH` define o comprimento da rotação e `tree_level` define os níveis de ramificações da árvore, através da alteração desses parâmetros podemos definir infinitas diferentes árvores fractais.
+O parâmetro `WIDTH` define a largura da árvore, `BRANCH_LENGTH` define o comprimento de cada galho, `ROTATION_LENGTH` define o comprimento da rotação e `tree_level` define os níveis de ramificações da árvore, através da alteração desses parâmetros podemos definir infinitas diferentes árvores fractais.
 
 ## Aplicações de Recursão
 
