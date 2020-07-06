@@ -60,20 +60,20 @@ Agora imagine que não tenhamos acesso aos constructos **for** ou **while**, com
 
 Se você for um matemático, poderia começar lembrando que a adição é uma função definida para dois parâmetros, um par de números. Para redefinir o problema de adicionar uma lista a adicionar pares de números, poderíamos reescrever a lista como uma expressão totalmente entre parênteses. Essa expressão ficaria assim:
 
-`((((1+3)+5)+7)+9)`
+`((((1+2)+3)+4)+5)`
 
 Também podemos colocar parênteses a expressão ao contrário:
 
-`(1+(3+(5+(7+9))))`
+`(1+(2+(3+(4+5))))`
 
 Observe que o conjunto mais interno de parênteses, `(7 + 9)`, é um problema que podemos resolver sem um loop ou qualquer constructo especial. De fato, podemos usar a seguinte sequência de simplificações para calcular uma soma final.
 
 ```
-resultado = (1+(3+(5+(7+9))))
-	resultado = (1+(3+(5+16)))
-		resultado = (1+(3+21))
-			resultado = (1+24)
-				resultado = 25
+resultado = (1+(2+(3+(4+5))))
+	resultado = (1+(2+(3+9)))
+		resultado = (1+(2+12))
+			resultado = (1+14)
+				resultado = 15
 ```
 
 ## Solução Recursiva
