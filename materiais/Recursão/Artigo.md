@@ -1,7 +1,7 @@
 # Recursão
 
 <h1 align="center">
-    <img alt="Recursion" src="https://i.ibb.co/ky1Wj9Y/mise.jpg"> </br>
+    <img alt="Recursion" src="https://i.ibb.co/ky1Wj9Y/mise.jpg">
 </h1>
 
 <figure>
