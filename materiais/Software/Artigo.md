@@ -72,7 +72,7 @@ As mais notáveis definições sobre o que é a Engenharia de Software incluem:
 - "A aplicação de uma abordagem sistemática, disciplinada e quantificável para o desenvolvimento, operação e manutenção de software". — *IEEE Standard Glossary of Software Engineering Terminology*
 - "Uma disciplina de engenharia que se preocupa com todos os aspectos da produção de software" — *Ian Sommerville*
 - "O estabelecimento e o uso de princípios sólidos de engenharia para obter software economicamente confiável e que funcione eficientemente em máquinas reais". — *Fritz Bauer*
-- "Um ramo da ciência da computação que lida com o design, implementação e manutenção de programas de computador complexos". — *Merriam-Webste*
+- "Um ramo da ciência da computação que lida com o design, implementação e manutenção de programas de computador complexos". — *Merriam-Webster*
 
 ### Campos 
 
@@ -109,3 +109,36 @@ As dimensões da qualidade de software incluem:
 - **Segurança**: a capacidade do software de proteger contra acesso não autorizado, invasão de privacidade, roubo, perda de dados, etc.
 - **Testabilidade**: A capacidade do software de ser facilmente testado.
 - **Usabilidade**: Quão fácil é usar o software.
+
+### Princípios de Design de Software
+
+A construção de software é um trabalho de alta complexidade que pode envolver um grande número de pessoas, desenvolver software de qualidade é um grande desafio e para isso existem princípios que podem nos auxiliar a desenvolver melhores softwares.
+
+1. **Abstração**: Em engenharia de software e ciência da computação, a abstração é uma técnica para organizar a complexidade dos sistemas de computação. Ele funciona estabelecendo um nível de simplicidade no qual uma pessoa interage com o sistema, suprimindo os detalhes mais complexos abaixo do nível atual. O programador trabalha com uma interface idealizada (geralmente bem definida) e pode adicionar níveis adicionais de funcionalidade que, de outra forma, seriam muito complexos para lidar. Por exemplo, um programador que escreve código que envolve operações numéricas pode não estar interessado na maneira como os números são representados no hardware subjacente (por exemplo, se são inteiros de 16 ou 32 bits) e, onde esses detalhes foram suprimidos, pode-se dizer que foram abstraídos, deixando apenas números com os quais o programador pode trabalhar. Da mesma forma, uma tarefa de enviar uma mensagem de email pelos continentes seria extremamente complexa se o programador precisasse começar com um pedaço de cabo de fibra óptica e componentes básicos de hardware. Usando camadas de complexidade criadas para abstrair os cabos físicos e o layout da rede e apresentando ao programador um canal de dados virtual, essa tarefa é gerenciável.
+
+A abstração pode ser aplicada ao controle ou aos dados: a abstração de controle é a abstração de ações, enquanto a abstração de dados é a das estruturas de dados.
+
+Abstração de controle envolve o uso de sub-rotinas e abstrações de fluxo de controle
+A abstração de dados permite lidar com partes de dados de maneira significativa. Por exemplo, é a motivação básica por trás do tipo de dados.
+
+A noção de um objeto na programação orientada a objetos pode ser vista como uma maneira de combinar abstrações de dados e código.
+
+A mesma definição abstrata pode ser usada como uma interface comum para uma família de objetos com diferentes implementações e comportamentos, mas que compartilham o mesmo significado. O mecanismo de herança na programação orientada a objetos pode ser usado para definir uma classe abstrata como a interface comum.
+
+A recomendação de que os programadores usem abstrações sempre que adequado, a fim de evitar duplicação (geralmente de código) é conhecida como princípio de abstração. O requisito de que uma linguagem de programação forneça abstrações adequadas também é chamado de princípio de abstração.
+
+Por que usar abstração? Isso torna seu software reutilizável e permite que você e outros desenvolvedores se concentrem nos detalhes que realmente importam. Você realmente se importa exatamente como um objeto é gravado em um banco de dados? Não. Você tem coisas maiores para trabalhar.
+
+2. **Separation of Concerns**: Na ciência da computação, a Separação de Preocupações(SoC) é um princípio de design para separar um programa de computador em seções distintas, de modo que cada seção aborda uma preocupação separada. Uma preocupação é um conjunto de informações que afeta o código de um programa de computador. Uma preocupação pode ser tão geral quanto "os detalhes do hardware de um aplicativo" ou tão específica quanto "o nome de qual classe instanciar". Um programa que incorpora bem o SoC é chamado de programa modular. A modularidade e, portanto, a separação de preocupações, são alcançadas encapsulando informações dentro de uma seção de código que possui uma interface bem definida. Encapsulamento é um meio de ocultar informações. Projetos em camadas em sistemas de informação são outra modalidade de separação de preocupações (por exemplo, camada de apresentação, camada de lógica de negócios, camada de acesso a dados, camada de persistência).
+
+A separação de preocupações resulta em mais graus de liberdade para alguns aspectos do design, implantação ou uso do programa. Comum entre eles é o aumento da liberdade para simplificação e manutenção de código. Quando as preocupações são bem separadas, há mais oportunidades para atualização, reutilização e desenvolvimento independente de módulos. Ocultar os detalhes de implementação dos módulos atrás de uma interface permite melhorar ou modificar a seção de código de uma única preocupação sem precisar conhecer os detalhes de outras seções e sem fazer as alterações correspondentes nessas outras seções. Os módulos também podem expor versões diferentes de uma interface, o que aumenta a liberdade de atualizar um sistema complexo de maneira fragmentada, sem perda temporária de funcionalidade.
+
+Por que usar SoC? Ao separar o código logicamente, você o torna mais confiável, portátil e flexível. Você reduz as dependências entre suas classes que tornam o *debugging* um pesadelo. O [Tight Coupling](https://en.wikipedia.org/wiki/Coupling_(computer_programming)) pode dificultar significativamente sua vida.
+
+3. **YAGNI - You Aren't Going to Need It**: É um princípio de [extreme programming](https://en.wikipedia.org/wiki/Extreme_programming)(XP) que afirma que um programador não deve adicionar funcionalidades até que seja considerado necessário. Ron Jeffries, co-fundador do XP, escreveu: "Sempre implemente as coisas quando você realmente precisa delas, nunca quando você apenas prevê que precisa delas". Outras formas da frase incluem "Você não precisará disso" e "Você não vai precisar".
+
+4. **KISS - Keep It Simple Stupid**: É um princípio de design observado pela Marinha dos EUA em 1960. O princípio do KISS afirma que a maioria dos sistemas funciona melhor se forem mantidos simples e não complicados; portanto, a simplicidade deve ser uma meta fundamental no design e a complexidade desnecessária deve ser evitada. A frase foi associada ao engenheiro de aeronaves [Kelly Johnson](https://en.wikipedia.org/wiki/Kelly_Johnson_(engineer)).
+
+5. **DRY - Don't Repeat Yourself**: É um princípio do desenvolvimento de software destinado a reduzir a repetição de padrões de software, substituindo-o por abstrações ou usando a normalização de dados para evitar redundância.
+
+O princípio DRY é declarado como "Todo conhecimento deve ter uma representação única, inequívoca e autoritativa dentro de um sistema". O princípio foi formulado por Andy Hunt e Dave Thomas em seu livro [The Pragmatic Programmer](https://en.wikipedia.org/wiki/The_Pragmatic_Programmer). Eles o aplicam amplamente para incluir "esquemas de banco de dados, planos de teste, sistema de construção e até documentação". Quando o princípio DRY é aplicado com sucesso, uma modificação de qualquer elemento único de um sistema não requer uma alteração em outros elementos logicamente não relacionados. Além disso, os elementos logicamente relacionados são alterados de maneira previsível e uniforme e, portanto, são mantidos em sincronia.
