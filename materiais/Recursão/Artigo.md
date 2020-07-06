@@ -1,6 +1,8 @@
 # Recursão
 
-![img](https://i.ibb.co/ky1Wj9Y/mise.jpg)
+<h1 align="center">
+    <img alt="Recursion" src="https://i.ibb.co/ky1Wj9Y/mise.jpg"> </br>
+</h1>
 
 <figure>
     <blockquote>
@@ -137,7 +139,7 @@ Para exemplificarmos essa ideia, vamos então considerar a computação da Sequ�
 
 Como podemos observar, os números de Fibonacci são uma sequência de números em que o número atual é o resultado da soma dos dois números anteriores, por exemplo: `Fibonacci(6)` deve retornar **8**, uma vez que a soma de `5 + 3 = 8`.
 
-Vejamos as soluções
+Vejamos algumas diferentes possíveis soluções para Fibonacci
 
 1. Utilizando Recursão
 
