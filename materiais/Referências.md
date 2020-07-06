@@ -7,3 +7,4 @@
 - [CS101 - Introduction to Computing Principles](https://web.stanford.edu/class/cs101/)
 - [CS 112 - Introduction to Computer Programming](http://cs112.cs.yale.edu/2020A/syllabus.html)
 - [MIT 6.0001 - Introduction to Computer Science and Programming in Python](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/)
+- [Problem Solving with Algorithms and Data Structures using Python](https://runestone.academy/runestone/books/published/pythonds/index.html)

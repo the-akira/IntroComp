@@ -1,6 +1,6 @@
 # Recursão
 
-![img](https://i.ibb.co/rQ3jrvn/mise-en-abyme.jpg)
+![img](https://i.ibb.co/ky1Wj9Y/mise.jpg)
 
 <figure>
     <blockquote>
@@ -35,7 +35,7 @@ Semanticamente: Uma técnica de programação em que uma função chama a si mes
 
 ## Soluções Iterativas
 
-Através do uso de constructos de Looping (while e for loops) somos capazes de criar algoritmos iterativos.
+Através do uso de constructos de Looping (**while** e **for** loops) somos capazes de criar algoritmos iterativos.
 
 Nos possibilitando capturar um conjunto de **state variáveis** que podem ser atualizadas em cada iteração através do loop.
 
@@ -134,3 +134,152 @@ Uma tática comum de programação de computadores que vimos até então é divi
 Para exemplificarmos essa ideia, vamos então considerar a computação da Sequência de Fibonacci, que é representada por:
 
 `1, 1, 2, 3, 5, 8, 13, 21, 34, 55...`
+
+Como podemos observar, os números de Fibonacci são uma sequência de números em que o número atual é o resultado da soma dos dois números anteriores, por exemplo: `Fibonacci(6)` deve retornar **8**, uma vez que a soma de `5 + 3 = 8`.
+
+Vejamos as soluções
+
+1. Utilizando Recursão
+
+```python
+def fib(n):
+	if n == 1 or n == 2:
+		return 1
+	else:
+		return fib(n-1) + fib(n-2)
+
+```
+
+Observe que esta implementação é concisa e de fácil compreensão, definimos um *base case* quando `n == 1 or n == 2` e executamos chamadas recursivas em `n - 1` & `n - 2`.
+
+O problema com esta solução é que 1 chamada se torna 2 chamadas, 2 chamadas se tornam 4 chamadas, etc, o crescimento é exponencial.
+
+A complexidade temporal é `O(2^n)` e a complexidade espacial também é `O(2^n)` para todas as chamadas de Stack.
+
+2. Utilizando Programação Dinâmica + Memoization
+
+De forma a tornarmos nosso algoritmo mais eficiente, podemos utilizar um mecanismo de cache para guardar os valores que já computamos, sem a necessidade de realizar esses cálculos novamente, economizando assim recursos computacionais.
+
+```python
+cache = {}
+def fibonacci(n):
+	if n in cache:
+		return cache[n]
+	if n == 1 or n == 2:
+		resposta = 1
+	elif n > 2:
+		resposta = fibonacci(n-1) + fibonacci(n-2)
+	cache[n] = resposta
+	return resposta
+
+for n in range(1,201):
+	print(f"{n} = {fibonacci(n)}")
+```
+
+Essa implementação utiliza um dicionário `cache` para guardar os valores já computados, isso fará com que as chamadas de Stack sejam drasticamente reduzidas e as computação duplicadas eliminadas, como podemos ver na seguinte figura ilustrativa:
+
+![img](https://i.ibb.co/MS3cn6S/Fibonacci.png)
+
+Com essa estratégia conseguimos melhorar a complexidade temporal e espacial de nosso algoritmo para `O(n)`
+
+3. Utilizando Iteração
+
+Esta implementação se chamada **Bottom Up**, pois construímos as soluções de baixo para cima através de sucessivas iterações.
+
+```python
+def fib_bottom_up(n):
+	if n == 1 or n == 2:
+		return 1
+	bottom_up = [None] * (n+1)
+	bottom_up[1] = 1
+	bottom_up[2] = 1
+	for i in range(3,n+1):
+		bottom_up[i] = bottom_up[i-1] + bottom_up[i-2]
+	return bottom_up[n]
+
+for n in range(1,201):
+	print(f"{n} = {fib_bottom_up(n)}")
+```
+
+Observe que estamos utilizando uma lista chamada **bottom_up** para armazenar as soluções.
+
+Esta implementação é muito eficiente, pois não há nenhuma chamada recursiva na Stack de chamadas.
+
+## Visualizando Recursão (Árvore Fractal)
+
+Uma Árvore Fractal é conhecida como uma árvore que pode ser criada por ramificação recursivamente simétrica.
+
+A ideia básica para construirmos ela é a seguinte:
+
+1. Desenhamos o tronco
+2. No final do tronco, dividimos ele por um ângulo e desenhamos dois galhos
+3. Repetimos até o fim de cada galho até que um nível suficiente de ramificações seja atingido
+
+A imagem a seguinte apresenta uma árvore com 8 níveis de ramificações
+
+![img](https://i.ibb.co/M99yLZx/fractaltree.png)
+
+A seguir temos o código responsável por desenhar a árvore
+
+```python
+import turtle
+
+WIDTH = 11
+BRANCH_LENGTH = 145
+ROTATION_LENGTH = 26
+
+class FractalTree(turtle.Turtle):
+    def __init__(self, level):
+        super(FractalTree, self).__init__()
+        self.level = level
+        self.hideturtle()
+        self.speed('fastest')
+        self.color('#3d2506')
+        self.left(90)
+        self.width(WIDTH)
+        self.penup()
+        self.back(BRANCH_LENGTH * 1.5)
+        self.pendown()
+        self.forward(BRANCH_LENGTH)
+        self.draw_tree(BRANCH_LENGTH, level)
+
+    def draw_tree(self, branch_length, level):
+        self.color('green')
+        width = self.width()
+        self.width(width * 3.0 / 3.6)
+        branch_length *= 3.0 / 3.6
+        self.left(ROTATION_LENGTH)
+        self.forward(branch_length)
+
+        if level > 0:
+            self.draw_tree(branch_length, level - 1)
+        self.back(branch_length)
+        self.right(2 * ROTATION_LENGTH)
+        self.forward(branch_length)
+
+        if level > 0:
+            self.draw_tree(branch_length, level - 1)
+        self.back(branch_length)
+        self.left(ROTATION_LENGTH)
+
+        self.width(width)
+
+if __name__ == '__main__':
+    tree_level = 8
+    tree = FractalTree(tree_level)
+    turtle.done()
+```
+
+O parâmetro `WIDTH` define a largura da árvore, `BRANCH_LENGTH` define o comprimento de cada galho e `ROTATION_LENGTH` define o comprimento da rotação e `tree_level` define os níveis de ramificações da árvore, através da alteração desses parâmetros podemos definir infinitas diferentes árvores fractais.
+
+## Aplicações de Recursão
+
+Como podemos ver neste artigo, a técnica de Recursão pode ser utilizada para resolver diversos problemas.
+
+- Solução de problemas envolvendo Arrays e Linked Lists
+- Solução de problemas envolvendo Trees
+- Solução de problemas envolvendo Graphs
+- Solução de problemas através de Dividir para Conquistar
+- Solução de problemas através de Programação Dinâmica
+- Solução de problemas através de buscas exaustivas
+- Desenvolver algoritmos de aproximação
