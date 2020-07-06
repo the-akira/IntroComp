@@ -219,7 +219,7 @@ A ideia básica para construirmos ela é a seguinte:
 2. No final do tronco, dividimos ele por um ângulo e desenhamos dois galhos
 3. Repetimos até o fim de cada galho até que um nível suficiente de ramificações seja atingido
 
-A imagem a seguinte apresenta uma árvore com 8 níveis de ramificações
+A imagem seguinte apresenta uma árvore com 8 níveis de ramificações
 
 ![img](https://i.ibb.co/M99yLZx/fractaltree.png)
 
