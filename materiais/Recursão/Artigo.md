@@ -66,7 +66,7 @@ Também podemos colocar parênteses a expressão ao contrário:
 
 `(1+(2+(3+(4+5))))`
 
-Observe que o conjunto mais interno de parênteses, `(7 + 9)`, é um problema que podemos resolver sem um loop ou qualquer constructo especial. De fato, podemos usar a seguinte sequência de simplificações para calcular uma soma final.
+Observe que o conjunto mais interno de parênteses, `(4 + 5)`, é um problema que podemos resolver sem um loop ou qualquer constructo especial. De fato, podemos usar a seguinte sequência de simplificações para calcular uma soma final.
 
 ```
 resultado = (1+(2+(3+(4+5))))
