@@ -14,7 +14,7 @@ Na ciência da computação, a **recursão** é um método de resolver um proble
 
 <figure>
     <blockquote>
-        <p>"O poder da recursão está evidentemente na possibilidade de definir um conjunto infinito de objetos por uma declaração finita. Da mesma maneira, um número infinito de cálculos pode ser descrito por um programa recursivo finito, mesmo que esse programa não contenha repetições explícitas."</p>
+        <p>"O poder da recursão está evidente na possibilidade de definir um conjunto infinito de objetos por uma declaração finita. Da mesma maneira, um número infinito de cálculos pode ser descrito por um programa recursivo finito, mesmo que esse programa não contenha repetições explícitas."</p>
         <footer>
             <cite>— Niklaus Wirth, Algorithms + Data Structures = Programs, 1976</cite>
         </footer>
