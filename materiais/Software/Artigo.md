@@ -33,8 +33,8 @@ A tabela abaixo apresenta exemplos de Softwares em diferentes categorias de uso
 | Games  | Diablo, Warcraft, Tibia |
 | Internet Browser  | Firefox, Google Chrome, Brave |
 | Video Player | VLC, Windows Media Player, Celluloid |
-| Operating Systems  | Ubuntu, Debian, Android, Windows |
-| Photo/Graphics  | Photoshop, GIMP, Krita |
+| Operating Systems  | Ubuntu, Debian, Android, Windows, iOS |
+| Photo/Graphics  | Photoshop, GIMP, Krita, Gravit Designer |
 | Presentation  | PowerPoint, LibreOffice Impress |
 | Programming Language  | C, C++, Javascript, Python, PHP |
 | Simulation | SimCity, The Sims, Flight Simulator |
