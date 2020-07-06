@@ -21,13 +21,13 @@ Na ciência da computação, a **recursão** é um método de resolver um proble
     </blockquote>
 </figure>
 
-A maioria das linguagens de programação de computador oferece suporte à recursão, permitindo que uma função se chame de dentro de seu próprio código. Algumas linguagens de programação funcionais não definem nenhuma construção de loop, mas dependem apenas da recursão para chamar código repetidamente. Está provado na teoria da computabilidade que essas linguagens apenas recursivas são *Turing complete*; isso significa que eles são tão poderosos (podem ser usados para resolver os mesmos problemas) quanto linguagens imperativas baseadas em estruturas de controle, como **while** e **for**.
+A maioria das linguagens de programação de computador oferece suporte à recursão, permitindo que uma função se chame de dentro de seu próprio código. Algumas linguagens de programação funcionais não definem nenhuma construção de loop, mas dependem apenas da recursão para chamar o código repetidamente. Está provado na teoria da computabilidade que essas linguagens apenas recursivas são *Turing complete*; isso significa que eles são tão poderosos (podem ser usados para resolver os mesmos problemas) quanto linguagens imperativas baseadas em estruturas de controle, como **while** e **for**.
 
-A chamada repetida de uma função a partir de si mesma pode fazer com que a Stack de chamadas tenha um tamanho igual à soma dos tamanhos de entrada de todas as chamadas envolvidas. Conclui-se que, para problemas que podem ser resolvidos facilmente por iteração, a recursão geralmente é menos eficiente e, para grandes problemas, é fundamental o uso de técnicas de otimização, como otimização de [tail call](https://en.wikipedia.org/wiki/Tail_call).
+A chamada repetida de uma função a partir de si mesma pode fazer com que a [Stack de chamadas](https://en.wikipedia.org/wiki/Call_stack) tenha um tamanho igual à soma dos tamanhos de entrada de todas as chamadas envolvidas. Conclui-se que, para problemas que podem ser resolvidos facilmente por iteração, a recursão geralmente é menos eficiente e, para grandes problemas, é fundamental o uso de técnicas de otimização, como otimização de [tail call](https://en.wikipedia.org/wiki/Tail_call).
 
-A recursão é então um método de solução de problemas que envolve a decomposição de um problema em subproblemas cada vez menores até chegar a um problema pequeno o suficiente para que possa ser resolvido trivialmente. Normalmente, a recursão envolve uma função que se chama. Embora possa parecer pouco superficial, a recursão nos permite escrever soluções elegantes para problemas que, de outra forma, seriam muito difíceis de programar.
+A recursão é então um método de solução de problemas que envolve a decomposição de um problema em sub-problemas cada vez menores até chegar a um problema pequeno o suficiente para que possa ser resolvido trivialmente. Normalmente, a recursão envolve uma função que chama a si mesma. Embora possa parecer um pouco superficial, a recursão nos permite escrever soluções elegantes para problemas que, de outra forma, seriam muito difíceis de programar.
 
-"Imagine uma impressora 3D que pode imprimir impressoras 3D que podem imprimir impressoras 3D"
+"*Imagine uma impressora 3D que pode imprimir impressoras 3D que podem imprimir impressoras 3D*"
 
 Definindo Recursão em termos de **Algoritmos** e **Semântica**:
 
@@ -51,14 +51,14 @@ def somalistaiter(lista):
 	return resultado
 
 lst = [1,2,3,4,5]
-print(somalistaiter(lst))
+print(somalistaiter(lst)) # 15
 ```
 
-A função **somalistaiter()** usa uma variável acumuladora (**resultado**) para calcular o total de todos os números na lista, iniciando com **0** e adicionando cada número na lista.
+A função **somalistaiter()** usa uma variável acumuladora (**resultado**) para calcular o total de todos os números na lista, iniciando com **0** e adicionando cada número da lista.
 
 Agora imagine que não tenhamos acesso aos constructos **for** ou **while**, como poderíamos computar a soma desses itens da lista?
 
-Se você fosse um matemático, poderia começar lembrando que a adição é uma função definida para dois parâmetros, um par de números. Para redefinir o problema de adicionar uma lista a adicionar pares de números, poderíamos reescrever a lista como uma expressão totalmente entre parênteses. Essa expressão ficaria assim:
+Se você for um matemático, poderia começar lembrando que a adição é uma função definida para dois parâmetros, um par de números. Para redefinir o problema de adicionar uma lista a adicionar pares de números, poderíamos reescrever a lista como uma expressão totalmente entre parênteses. Essa expressão ficaria assim:
 
 `((((1+3)+5)+7)+9)`
 
@@ -76,7 +76,7 @@ resultado = (1+(3+(5+(7+9))))
 				resultado = 25
 ```
 
-Como podemos pegar essa idéia e transformá-la em um programa Python? Primeiro, vamos reafirmar o problema da soma em termos de listas Python. Podemos dizer que a soma da lista `lista` é a soma do primeiro elemento da lista (`lista[0]`) e a soma dos números no restante da lista (`lista[1:]`). Para indicá-lo de forma funcional:
+Como podemos capturar essa idéia e transformá-la em um programa Python? Primeiro, vamos reafirmar o problema da soma em termos de listas Python. Podemos dizer que a soma da lista `lista` é a soma do primeiro elemento da lista (`lista[0]`) e a soma dos números no restante da lista (`lista[1:]`). Para indicá-lo de forma funcional:
 
 `somalista(lista) = primeiro(lista) + somalista(resto(lista))`
 
@@ -90,12 +90,12 @@ def somalista(lista):
 		return lista[0] + somalista(lista[1:])
 
 lista = [1,2,3,4,5]
-print(somalista(lista))
+print(somalista(lista)) # 15
 ```
 
 Existem algumas idéias importantes neste código para analisarmos. Primeiro, na linha 2, estamos verificando se a lista possui um elemento. Essa verificação é crucial e é nossa cláusula de escape da função (*base case*). A soma de uma lista de comprimento 1 é trivial; é apenas o número da lista. Segundo, na linha 5, nossa função se autodenomina! Esta é a razão pela qual chamamos o algoritmo **somalista()** de recursivo. Uma função recursiva é uma função que chama a si mesma.
 
-A Figura 1 mostra a série de chamadas recursivas necessárias para somar a lista `[1,2,3,4,5]`. Você deve pensar nessa série de chamadas como uma série de simplificações. Cada vez que fazemos uma chamada recursiva, estamos resolvendo um problema menor, até chegarmos ao ponto em que o problema não pode ficar menor.
+A **Figura 1** mostra a série de chamadas recursivas necessárias para somar a lista `[1,2,3,4,5]`. Você deve pensar nessa série de chamadas como uma série de simplificações. Cada vez que fazemos uma chamada recursiva, estamos resolvendo um problema menor, até chegarmos ao ponto em que o problema não pode ficar menor.
 
 ![img](https://i.ibb.co/qFpSZGN/Recursive-Calls.png)
 
@@ -105,7 +105,7 @@ A Figura 1 mostra a série de chamadas recursivas necessárias para somar a list
     </blockquote>
 </figure>
 
-Quando chegamos ao ponto em que o problema é o mais simples possível, começamos a reunir as soluções de cada um dos pequenos problemas até que o problema inicial seja resolvido. A Figura 2 mostra as adições que são executadas como **somalista()**, que retrocedem na série de chamadas. Quando a **somalista()** retorna do problema principal, temos a solução para o problema como um todo.
+Quando chegamos ao ponto em que o problema é o mais simples possível, começamos a reunir as soluções de cada um dos pequenos problemas até que o problema inicial seja resolvido. A **Figura 2** mostra as adições que são executadas como **somalista()**, que retrocedem na série de chamadas. Quando a **somalista()** retorna do problema principal, temos a solução para o problema como um todo.
 
 ![img](https://i.ibb.co/DwKPQdP/Recursive-Returns.png)
 
