@@ -1,5 +1,7 @@
 # Linguagens de Programação
 
+![img](https://i.ibb.co/2N4gxVh/PLang.png)
+
 Existem diversas definições sobre o que são as Linguagens de Programação. 
 
 Pode ser dizer que:
