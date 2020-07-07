@@ -112,6 +112,51 @@ else:
 
 Ele pode ser encontrado em linguagens como: [C](https://en.wikipedia.org/wiki/C_(programming_language))/[C++](https://en.wikipedia.org/wiki/C%2B%2B), [Javascript](https://www.w3schools.com/js/js_switch.asp), [Java](https://www.w3schools.com/java/java_switch.asp), [PHP](https://www.w3schools.com/php/php_switch.asp) e muitas outras.
 
+Fluxograma
+
+![img](https://i.imgur.com/4uzZh01.png)
+
+Exemplo de Código em C
+
+```c
+#include <stdio.h>
+
+// Programa que define uma simples calculadora
+
+int main() 
+{
+    char operador;
+    double n1, n2;
+
+    printf("Entre um operador (+, -, *, /): ");
+    scanf("%c",&operador);
+    printf("Entre dois operandos:\n");
+    scanf("%lf %lf",&n1, &n2);
+
+    switch(operador)
+    {
+        case '+':
+            printf("%.1lf + %.1lf = %.1lf\n",n1, n2, n1+n2);
+            break;
+
+        case '-':
+            printf("%.1lf - %.1lf = %.1lf\n",n1, n2, n1-n2);
+            break;
+
+        case '*':
+            printf("%.1lf * %.1lf = %.1lf\n",n1, n2, n1*n2);
+            break;
+
+        case '/':
+            printf("%.1lf / %.1lf = %.1lf\n",n1, n2, n1/n2);
+            break;
+
+        default:
+            printf("Erro! Operador digitado é incorreto!");
+    }
+}
+```
+
 ### Loops / Iteração
 
 Um Loop ou Iteração é necessário quando uma série de instruções precisam ser repetidas até que uma resposta desejada seja obtida. Um conjunto de instruções que é repetidamente executada é conhecido como Loop.
