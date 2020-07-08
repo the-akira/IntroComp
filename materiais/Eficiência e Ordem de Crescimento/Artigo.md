@@ -72,7 +72,7 @@ A ideia é expressarmos eficiência em termos do tamanho do *input*
 
 *Inputs* diferentes alteram como o programa executa na maioria dos casos
 
-- Uma função que busca por um elemento em uma lista
+Considere uma função que busca por um elemento em uma lista:
 
 ```python
 def search_element(lst,e):
