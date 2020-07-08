@@ -13,7 +13,7 @@
 - [Controle de Fluxo e Iteração](https://github.com/the-akira/IntroComp/blob/master/materiais/Controle%20de%20Fluxo%20e%20Itera%C3%A7%C3%A3o/Controle%20de%20Fluxo%20e%20Itera%C3%A7%C3%A3o.md)
 - [Dados e Armazenamento](https://github.com/the-akira/IntroComp/blob/master/materiais/Dados%20e%20Armazenamento/Artigo.md)
 - [Debugging](https://github.com/the-akira/IntroComp/blob/master/materiais/Debugging/Debugging.md)
-- Eficiência e Ordem de Crescimento
+- [Eficiência e Ordem de Crescimento](https://github.com/the-akira/IntroComp/blob/master/materiais/Efici%C3%AAncia%20e%20Ordem%20de%20Crescimento/Artigo.md)
 - [Estruturas de Dados](https://github.com/the-akira/IntroComp/blob/master/materiais/Estruturas%20de%20Dados/Artigo.md)
 - [Hardware](https://github.com/the-akira/IntroComp/blob/master/materiais/Hardware/Artigo.md)
 - [Linguagens de Programação](https://github.com/the-akira/IntroComp/blob/master/materiais/Linguagens%20de%20Programa%C3%A7%C3%A3o/Artigo.md)
