@@ -179,6 +179,8 @@ for i in range(n):
 - `O(n^c)`: denota tempo de execução polinomial (c é uma constante)
 - `O(c^n)`: denota tempo de execução exponencial (c é uma constante elevada à potência baseado no tamanho do input)
 
+---------------------------------------
+
 - `O(1)` - Código não depende no tamanho do problema
 - `O(log n)` - Reduz o problema pela metade cada vez pelo processo
 - `O(n)` - Programas iterativos simples ou recursivos
