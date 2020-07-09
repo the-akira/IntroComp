@@ -160,7 +160,7 @@ for j in range(n*n):
 	- Usado para *statements*/loops aninhados
 	- `O(f(n)) * O(g(n)) é O(f(n) * g(n))`
 
-por exemplo:
+Por exemplo:
 
 ```python
 for i in range(n):
@@ -168,7 +168,7 @@ for i in range(n):
 		print('a')
 ```
 
-É `O(n) * O(n) = O(n*n) = O(n²)` por causa do loop exterior executa n vezes o loop interior executa n vezes para cada iteração do loop exterior
+É `O(n) * O(n) = O(n*n) = O(n²)` por causa do loop exterior executa **n** vezes o loop interior executa **n** vezes para cada iteração do loop exterior
 
 #### Classes de Complexidade
 
@@ -314,3 +314,5 @@ def print_elements_twice(lista):
 
 print_elements_twice(lst)
 ```
+
+Para mais detalhes consulte: [Big O Cheat Sheet](https://www.bigocheatsheet.com/)
