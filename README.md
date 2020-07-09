@@ -9,7 +9,7 @@
 <h1 align="center">Conteúdo</h1>
 
 - [Abstração](https://github.com/the-akira/IntroComp/blob/master/materiais/Abstra%C3%A7%C3%A3o/Artigo.md)
-- Algoritmos de Busca e Ordenação
+- [Algoritmos de Busca e Ordenação](https://github.com/the-akira/IntroComp/blob/master/materiais/Algoritmos%20de%20Busca%20e%20Ordena%C3%A7%C3%A3o/Artigo.md)
 - [Controle de Fluxo e Iteração](https://github.com/the-akira/IntroComp/blob/master/materiais/Controle%20de%20Fluxo%20e%20Itera%C3%A7%C3%A3o/Controle%20de%20Fluxo%20e%20Itera%C3%A7%C3%A3o.md)
 - [Dados e Armazenamento](https://github.com/the-akira/IntroComp/blob/master/materiais/Dados%20e%20Armazenamento/Artigo.md)
 - [Debugging](https://github.com/the-akira/IntroComp/blob/master/materiais/Debugging/Debugging.md)
