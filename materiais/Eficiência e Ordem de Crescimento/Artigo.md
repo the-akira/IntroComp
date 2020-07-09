@@ -84,7 +84,7 @@ def search_element(lst,e):
 
 Usualmente quando falamos de Complexidade, focamos no comportamento de pior caso.
 
-Melhor, Médio, Pior Casos
+#### Melhor, Médio, Pior Casos
 
 Imagine que nos é fornecido uma lista `L` de tamanho `len(L)`
 
