@@ -81,8 +81,6 @@ Na ciência da computação, a análise amortizada é um método para analisar a
 
 Embora certas operações para um determinado algoritmo possam ter um custo significativo em recursos, outras operações podem não ser tão caras. A análise amortizada considera as operações custosas e menos custosas juntas em toda a série de operações do algoritmo. Isso pode incluir a contabilização de diferentes tipos de entrada, comprimento da entrada e outros fatores que afetam seu desempenho.
 
-## Custo Amortizado
-
 Considerando que é necessário ordenarmos uma lista `L` para podermos executar o algoritmo Binary Search:
 
 É válido em termos de desempenho ordenar a lista e depois fazer buscas?
