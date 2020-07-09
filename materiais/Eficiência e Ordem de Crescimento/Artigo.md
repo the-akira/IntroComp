@@ -84,7 +84,7 @@ def search_element(lst,e):
 
 Usualmente quando falamos de Complexidade, focamos no comportamento de pior caso.
 
-#### Melhor, Médio, Pior Casos
+#### Melhor, Médio & Pior Caso
 
 Imagine que nos é fornecido uma lista `L` de tamanho `len(L)`
 
@@ -136,13 +136,15 @@ log(n) + n + 4 = O(n)
 
 #### Analisando Programas e sua Complexidade
 
-- Combinar classes de complexidade
-	- Analisar os *statements* dentro das funções
-	- Aplicar regras, focar nos termos dominantes
+Combinar classes de complexidade
 
-- Lei da Adição para O():
-	- Utilizar com *statements* sequenciais
-	- `O(f(n)) + O(g(n)) é O(f(n) + g(n))`
+- Analisar os *statements* dentro das funções
+- Aplicar regras, focar nos termos dominantes
+
+##### Lei da Adição para O()
+
+- Utilizar com *statements* sequenciais
+- `O(f(n)) + O(g(n)) é O(f(n) + g(n))`
 
 Por exemplo:
 
@@ -156,9 +158,10 @@ for j in range(n*n):
 
 É `O(n) + O(n*n) = O(n+n²) = O(n²)` por causa do termo dominante
 
-- Lei da Multiplicação para O():
-	- Usado para *statements*/loops aninhados
-	- `O(f(n)) * O(g(n)) é O(f(n) * g(n))`
+##### Lei da Multiplicação para O()
+
+- Usado para *statements*/loops aninhados
+- `O(f(n)) * O(g(n)) é O(f(n) * g(n))`
 
 Por exemplo:
 
