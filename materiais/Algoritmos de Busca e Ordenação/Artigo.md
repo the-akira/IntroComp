@@ -256,7 +256,7 @@ Dividir a lista pela metade em cada chamada recursiva
 
 Complexidade final é `O(n log n)` onde **n** é `len(L)`
 
-Outros algoritmos se ordenação importante que podemos considerar: [Insertion Sort](https://akiradev.netlify.app/posts/algoritmo-insertion-sort/), [Heap Sort](https://akiradev.netlify.app/posts/algoritmo-heap-sort/), [Quick Sort](https://akiradev.netlify.app/posts/algoritmo-quick-sort/).
+Outros algoritmos de ordenação importantes que podemos considerar: [Insertion Sort](https://akiradev.netlify.app/posts/algoritmo-insertion-sort/), [Heap Sort](https://akiradev.netlify.app/posts/algoritmo-heap-sort/), [Quick Sort](https://akiradev.netlify.app/posts/algoritmo-quick-sort/).
 
 Python também nos oferece um método de ordenação nativo que utiliza o algoritmo [TimSort](https://en.wikipedia.org/wiki/Timsort), muito popular por sua eficiência.
 
