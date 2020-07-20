@@ -121,7 +121,7 @@ Declaramos um ponteiro `*p` e utilizamos a função **malloc()** e multiplicamos
 
 Enfim declaramos o primeiro elemento do array como **13** e o segundo como **17** e posteriormente usamos um **for loop** para imprimirmos os valores no console.
 
-Finalmente usamos a função **free()** para liberar em memória, isso é importante pois evita problemas de vazamento de memória([memory leak](https://en.wikipedia.org/wiki/Memory_leak)).
+Finalmente usamos a função **free()** para desalocar memória, isso é importante pois evita problemas de vazamento de memória([memory leak](https://en.wikipedia.org/wiki/Memory_leak)).
 
 Caso tenha dúvida de como compilar os programas, confira este [Link](https://github.com/the-akira/IntroComp/blob/master/Exemplos%20C/Compilar.md).
 
