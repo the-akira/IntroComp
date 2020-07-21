@@ -6,7 +6,7 @@
 
 <p align="center">Artigos que visam introduzir conceitos essenciais da Ciência da Computação e Programação.</p>
 
-<h1 align="center">Conteúdo</h1>
+## Conteúdo
 
 - [Abstração](https://github.com/the-akira/IntroComp/blob/master/materiais/Abstra%C3%A7%C3%A3o/Artigo.md)
 - [Algoritmos de Busca e Ordenação](https://github.com/the-akira/IntroComp/blob/master/materiais/Algoritmos%20de%20Busca%20e%20Ordena%C3%A7%C3%A3o/Artigo.md)
@@ -20,3 +20,4 @@
 - [Recursão e Programação Dinâmica](https://github.com/the-akira/IntroComp/blob/master/materiais/Recurs%C3%A3o/Artigo.md)
 - Simulações e Aleatoriedade
 - [Software](https://github.com/the-akira/IntroComp/blob/master/materiais/Software/Artigo.md)
+- [Referências](https://github.com/the-akira/IntroComp/blob/master/materiais/Refer%C3%AAncias.md)
