@@ -18,6 +18,6 @@
 - [Hardware](https://github.com/the-akira/IntroComp/blob/master/materiais/Hardware/Artigo.md)
 - [Linguagens de Programação](https://github.com/the-akira/IntroComp/blob/master/materiais/Linguagens%20de%20Programa%C3%A7%C3%A3o/Artigo.md)
 - [Recursão e Programação Dinâmica](https://github.com/the-akira/IntroComp/blob/master/materiais/Recurs%C3%A3o/Artigo.md)
-- Simulações e Aleatoriedade
+- [Simulações e Aleatoriedade](https://github.com/the-akira/IntroComp/blob/master/materiais/Simula%C3%A7%C3%B5es%20e%20Aleatoriedade/Artigo.md)
 - [Software](https://github.com/the-akira/IntroComp/blob/master/materiais/Software/Artigo.md)
 - [Referências](https://github.com/the-akira/IntroComp/blob/master/materiais/Refer%C3%AAncias.md)
