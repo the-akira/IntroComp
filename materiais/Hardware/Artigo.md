@@ -143,6 +143,77 @@ Persistente significa que os bytes são armazenados, mesmo quando a energia é r
 
 Uma unidade flash é mais rápida e consome menos energia que um disco rígido. No entanto, por byte, o flash é significativamente mais caro que o armazenamento no disco rígido. O Flash está ficando mais barato, por isso pode assumir nichos à custa dos discos rígidos. O flash é muito mais lento que a RAM, portanto, não é um bom substituto para a RAM.
 
+### Hierarquia de Memória
+
+Na [arquitetura do computador](https://en.wikipedia.org/wiki/Computer_architecture), a hierarquia da memória separa o armazenamento do computador em uma hierarquia baseada no tempo de resposta. Como o tempo de resposta, a complexidade e a capacidade estão relacionados, os níveis também podem ser diferenciados por seu desempenho e tecnologias de controle. A hierarquia de memória afeta o desempenho no projeto arquitetônico do computador, previsões de algoritmos e construções de *programação low level* envolvendo [locality of reference](https://en.wikipedia.org/wiki/Locality_of_reference).
+
+![img](https://i.ibb.co/H7s0SKk/Memory-Hierarchy.png)
+
+<figure>
+    <blockquote>
+        <p>A figura acima representa o diagrama da hierarquia da memória do computador.</p>
+    </blockquote>
+</figure>
+
+Projetar para alto desempenho requer considerar as restrições da hierarquia de memória, ou seja, o tamanho e as capacidades de cada componente. Cada um dos vários componentes pode ser visto como parte de uma hierarquia de memórias (m1, m2, ..., mn) em que cada membro **m** é tipicamente menor e mais rápido do que o próximo membro mais alto **m + 1** da hierarquia. Para limitar a espera em níveis mais altos, um nível mais baixo responderá enchendo um buffer e sinalizando para ativar a transferência.
+
+Existem quatro níveis principais de armazenamento:
+
+- Interno - [registradores](https://en.wikipedia.org/wiki/Processor_register) e [cache](https://en.wikipedia.org/wiki/CPU_cache) do processador.
+- Principal - a [RAM](https://en.wikipedia.org/wiki/Random-access_memory) do sistema e as placas controladoras.
+- Armazenamento de massa on-line - Armazenamento secundário.
+- Armazenamento off-line em massa - armazenamento terciário e off-line.
+
+Esta é uma estruturação geral da hierarquia da memória. Muitas outras estruturas são úteis. Por exemplo, um algoritmo de paginação pode ser considerado como um nível de memória virtual ao projetar uma arquitetura de computador e pode-se incluir um nível de [armazenamento nearline](https://en.wikipedia.org/wiki/Nearline_storage) entre armazenamento online e offline.
+
+#### Propriedades das Tecnologias na Hierarquia da Memória
+
+- Adicionar complexidade retarda a hierarquia da memória
+- A tecnologia de memória CMOx amplia o espaço Flash na hierarquia de memória
+- Uma das principais maneiras de aumentar o desempenho do sistema é minimizar o quão baixo na hierarquia da memória é necessário ir para manipular os dados.
+- Latência e largura de banda são duas métricas associadas aos caches. Nenhum deles é uniforme, mas é específico para um determinado componente da hierarquia da memória.
+- É difícil prever onde residem os dados na hierarquia da memória.
+- A localização na hierarquia de memória determina o tempo necessário para que a pré-busca ocorra.
+
+#### Exemplos
+
+O número de níveis na hierarquia de memória e o desempenho em cada nível aumentaram com o tempo. O tipo de memória ou componentes de armazenamento também mudam historicamente. Por exemplo, a hierarquia de memória de um processador **Intel Haswell Mobile** por volta de 2013 é:
+
+- **Registradores do processador**: o acesso mais rápido possível (geralmente 1 ciclo da CPU). Alguns milhares de bytes de tamanho
+- **Cache**:
+	- Nível 0 (L0) Cache de microoperações - 6 KiB de tamanho
+	- Cache de instrução de nível 1 (L1) - 128 KiB de tamanho
+	- Cache de dados de nível 1 (L1) - 128 KiB de tamanho. A melhor velocidade de acesso é de cerca de 700 GiB/segundo
+	- Nível 2 (L2) Instrução e dados (compartilhados) - 1 MiB de tamanho. A melhor velocidade de acesso é de cerca de 200 GiB/segundo
+	- Cache compartilhado de nível 3 (L3) - 6 MiB de tamanho. A melhor velocidade de acesso é de cerca de 100 GB/segundo
+	- Cache compartilhado de nível 4 (L4) - 128 MiB de tamanho. A melhor velocidade de acesso é de cerca de 40 GB/segundo
+- **Memória principal (armazenamento primário)**: Gigabytes de tamanho. A melhor velocidade de acesso é de cerca de 10 GB/segundo. No caso de uma máquina [NUMA](https://en.wikipedia.org/wiki/Non-Uniform_Memory_Access), os tempos de acesso podem não ser uniformes
+- **Armazenamento em disco (armazenamento secundário)**: Terabytes de tamanho. Em 2017, a melhor velocidade de acesso a partir de um [solid state drive](https://en.wikipedia.org/wiki/Solid-state_drive) do consumidor é de cerca de 2.000 MB/segundo
+- **Armazenamento nearline (armazenamento terciário)**: Até exabytes de tamanho. Em 2013, a melhor velocidade de acesso é de cerca de 160 MB/segundo
+- **Armazenamento offline**
+
+Os níveis mais baixos da hierarquia - dos discos para baixo - também são conhecidos como armazenamento em camadas. A distinção formal entre armazenamento online, nearline e offline é:
+
+- O armazenamento online está imediatamente disponível para *Input*/*Output*.
+- O armazenamento nearline não está imediatamente disponível, mas pode ser disponibilizado online rapidamente, sem intervenção humana.
+- O armazenamento offline não está imediatamente disponível e requer alguma intervenção humana para colocá-lo online.
+
+Por exemplo, os discos giratórios sempre ligados estão online, enquanto os discos giratórios que diminuem a rotação, como uma matriz massiva de disco ocioso ([MAID](https://en.wikipedia.org/wiki/MAID)), estão nearline. Mídias removíveis, como cartuchos de fita que podem ser carregados automaticamente, como em uma biblioteca de fitas, são nearline, enquanto os cartuchos que devem ser carregados manualmente estão offline.
+
+A maioria das CPUs modernas são tão rápidas que para a maioria das cargas de trabalho de programa, o gargalo é a [locality of reference](https://en.wikipedia.org/wiki/Locality_of_reference) dos acessos à memória e a eficiência do cache e da transferência de memória entre diferentes níveis da hierarquia. Como resultado, a CPU passa grande parte do tempo ociosa, esperando que o *Input*/*Output* de memória seja concluído.
+
+Isso às vezes é chamado de custo de espaço, pois um objeto de memória maior tem mais probabilidade de causar *overflow* em um nível pequeno/rápido e requer o uso de um nível maior/mais lento. A carga resultante no uso da memória é conhecida como pressão (respectivamente pressão de registrador, pressão de cache e pressão de memória(principal)).
+
+Os termos para dados ausentes em um nível superior e que precisam ser buscados em um nível inferior são, respectivamente: [register spilling](https://en.wikipedia.org/wiki/Register_spilling) (devido à pressão do registrador: registrador no cache), [cache misss](https://en.wikipedia.org/wiki/Cache_miss) (cache para a memória principal) e [page fault](https://en.wikipedia.org/wiki/Page_fault) (memória principal para o disco).
+
+Linguagens de programação modernas assumem principalmente dois níveis de memória, memória principal e armazenamento em disco, embora em [linguagem assembly](https://en.wikipedia.org/wiki/Assembly_language) e [inline assemblers](https://en.wikipedia.org/wiki/Inline_assembler) em linguagens como C, os registradores podem ser acessados diretamente. Tirar o máximo proveito da hierarquia de memória requer a cooperação de programadores, hardware e compiladores (bem como suporte subjacente do sistema operacional):
+
+- Os programadores são responsáveis por mover dados entre o disco e a memória por meio de *Intput*/*Output* de arquivo.
+- O hardware é responsável por mover dados entre a memória e os caches.
+- Os [compiladores de otimização](https://en.wikipedia.org/wiki/Optimizing_compiler) são responsáveis por gerar código que, quando executado, fará com que o hardware use caches e registradores de forma eficiente.
+
+Muitos programadores assumem um nível de memória. Isso funciona bem até que o aplicativo atinja uma barreira de desempenho. Em seguida, a hierarquia da memória será avaliada durante a [refatoração do código](https://en.wikipedia.org/wiki/Code_refactoring).
+
 ## Sistema de Arquivos (File System)
 
 Na computação, o File System (frequentemente abreviado como fs) controla como os dados são armazenados e recuperados. Sem um sistema de arquivos, os dados colocados em uma mídia de armazenamento seriam um grande corpo de dados, sem nenhuma maneira de sabermos quando um fragmento de dados termina e quando o próximo inicia. Ao separar os dados em partes e dar um nome a cada parte, os dados são facilmente isolados e identificados. Tomando seu nome da maneira como o sistema de gerenciamento de dados em papel é nomeado, cada grupo de dados é chamado de "arquivo". As regras de estrutura e lógica usadas para gerenciar os grupos de dados e seus nomes são chamadas de "sistema de arquivos".
