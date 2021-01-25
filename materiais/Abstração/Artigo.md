@@ -163,4 +163,4 @@ python = palindromo('python')
 print(abba,python)
 ```
 
-Nos será retorna `True` para a palavra **abba** que é palíndromo e `False` para a palavra **Python** que não é palíndromo. Através de uma simples definição, conseguimos estabelecer o cálculo para descobrir se uma palavra é ou não palíndromo, sem necessariamente termos que nos preocuparmos com os detalhes computacionais internos da Função/Procedimento.
+Nos será retornado `True` para a palavra **abba** (que é palíndromo) e `False` para a palavra **Python** (que não é palíndromo). Através de uma simples definição, conseguimos estabelecer o cálculo para descobrir se uma palavra é ou não palíndromo, sem necessariamente termos que nos preocuparmos com os detalhes computacionais internos da Função/Procedimento.
