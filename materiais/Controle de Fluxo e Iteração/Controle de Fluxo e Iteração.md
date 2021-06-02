@@ -44,12 +44,12 @@ Exemplo de Código em C
 
 int main(void)
 {
-	int x; 
-	float y, z;
-	x = 10;
-	y = 150.7;
-	z = x + y;
-	printf("A soma de %d + %f = %f\n",x,y,z);
+    int x; 
+    float y, z;
+    x = 10;
+    y = 150.7;
+    z = x + y;
+    printf("A soma de %d + %f = %f\n",x,y,z);
 }
 ```
 
@@ -83,14 +83,14 @@ Exemplo de Código em C
 
 int main(void)
 {
-	int num;
-	printf("Digite um número: ");
-	scanf("%d",&num);
+    int num;
+    printf("Digite um número: ");
+    scanf("%d",&num);
 
-	if(num % 2 == 0)
-		printf("%d é um número par\n",num);
-	else
-		printf("%d é um número ímpar\n",num);
+    if(num % 2 == 0)
+        printf("%d é um número par\n",num);
+    else
+        printf("%d é um número ímpar\n",num);
 }
 ```
 
@@ -101,11 +101,11 @@ Exemplo de Código em Python
 num = int(input("Digite um número: "))
 
 if num > 0:
-	print(f"{num} é positivo")
+    print(f"{num} é positivo")
 elif num == 0:
-	print(f"Número é {num}")
+    print(f"Número é {num}")
 else:
-	print(f"{num} é negativo")
+    print(f"{num} é negativo")
 ```
 
 É **importante** lembrarmos que algumas linguagens implementam o [switch statement](https://en.wikipedia.org/wiki/Switch_statement) que é um tipo de mecanismo de controle de seleção usado para permitir que o valor de uma variável ou expressão mude o fluxo de controle da execução do programa por meio de pesquisa e mapa. 
@@ -178,11 +178,11 @@ For Loop:
 
 int main(void)
 {
-	int array[] = {10,20,30,40,50};
-	int len = sizeof(array) / sizeof(array[0]);
+    int array[] = {10,20,30,40,50};
+    int len = sizeof(array) / sizeof(array[0]);
 
-	for(int i = 0; i < len; i++)
-		printf("Valor no índice %d = %d\n",i,array[i]);
+    for(int i = 0; i < len; i++)
+        printf("Valor no índice %d = %d\n",i,array[i]);
 }
 ```
 
@@ -197,15 +197,15 @@ While Loop:
 
 int main(void)
 {
-	int num;
-	do
-	{
-		printf("Digite um número negativo: ");
-		scanf("%d",&num);
-	}
-	while(num >= 0);
+    int num;
+    do
+    {
+        printf("Digite um número negativo: ");
+        scanf("%d",&num);
+    }
+    while(num >= 0);
 
-	printf("Número digitado = %d\n",num);
+    printf("Número digitado = %d\n",num);
 }
 ```
 
@@ -218,8 +218,8 @@ For Loop:
 numeros = list(range(6))
 
 for numero in numeros:
-	if numero > 3:
-		print(numero)
+    if numero > 3:
+        print(numero)
 ```
 
 While Loop:
@@ -229,8 +229,8 @@ While Loop:
 num = int(input("Digite um número positivo: "))
 
 while num > 0:
-	print(num)
-	num -= 1
+    print(num)
+    num -= 1
 ```
 
 ### Vantagens de Utilizar Estruturas de Controle de Fluxo
