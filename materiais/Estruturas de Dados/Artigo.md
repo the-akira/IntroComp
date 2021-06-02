@@ -69,31 +69,31 @@ Todos eles serão alocados em [Stack](https://gribblelab.org/CBootCamp/7_Memory_
 
 int main()
 {
-	// Criando arrays em Stack
-	int A[5];
-	int B[5]={1,2,3,4,5};
-	int C[10]={2,8,10};
-	int D[7]={0};
-	int E[]={1,3,5,7,9,11};	
+    // Criando arrays em Stack
+    int A[5];
+    int B[5]={1,2,3,4,5};
+    int C[10]={2,8,10};
+    int D[7]={0};
+    int E[]={1,3,5,7,9,11};	
 }
 ```
 
 Dentro da função **main()**, vamos agora imprimir os elementos dos arrays. Especificamente do array **E** iremos imprimir o endereço em memória do elemento, o elemento respectivo e o seu tamanho em bytes:
 
 ```c
-	printf("%d\n",A[1]);
-	printf("%d\n",B[0]);
-	printf("%d\n",C[2]);
-	printf("%d\n",D[4]);
+    printf("%d\n",A[1]);
+    printf("%d\n",B[0]);
+    printf("%d\n",C[2]);
+    printf("%d\n",D[4]);
 
-	printf("---\n");
+    printf("---\n");
 
-	for(int i=0; i<5; i++)
-	{
-		printf("Endereço=%p\n",&E[i]);
-		printf("Valor=%d\n",E[i]);
-		printf("Tamanho em bytes=%lu\n",sizeof(E[i]));
-	}	
+    for(int i=0; i<5; i++)
+    {
+        printf("Endereço=%p\n",&E[i]);
+        printf("Valor=%d\n",E[i]);
+        printf("Tamanho em bytes=%lu\n",sizeof(E[i]));
+    }	
 ```
 
 **Importante**: Veja que ao imprimirmos o segundo elemento do array **A**, nos será trazido um valor "estranho", isso porque não há nenhum valor atribuído a este Array, logo será impresso o que chamamos de [garbage value](https://www.quora.com/What-do-you-mean-by-a-garbage-value-in-a-variable)
@@ -106,14 +106,14 @@ Vejamos agora um exemplo de como podemos alocar um array em [Heap](https://gribb
 
 int main()
 {
-	// Criando um array em Heap
-	int *p;
-	p = (int *)malloc(2*sizeof(int));
-	p[0]=13;
-	p[1]=17;
-	for(int i=0; i<2; i++)
-		printf("%d\n",p[i]);
-	free(p);
+    // Criando um array em Heap
+    int *p;
+    p = (int *)malloc(2*sizeof(int));
+    p[0]=13;
+    p[1]=17;
+    for(int i=0; i<2; i++)
+        printf("%d\n",p[i]);
+    free(p);
 }
 ```
 
@@ -162,30 +162,30 @@ Vejamos um exemplo de uma simples Stack implementada com a linguagem Python
 
 ```python
 class Stack:
-	def __init__(self):
-		self.items = []
+    def __init__(self):
+        self.items = []
 
-	def is_empty(self):
-		return self.items == []
+    def is_empty(self):
+        return self.items == []
 
-	def push(self, item):
-		self.items.append(item)
+    def push(self, item):
+        self.items.append(item)
 
-	def pop(self):
-		return self.items.pop()
+    def pop(self):
+        return self.items.pop()
 
-	def peek(self):
-		return self.items[len(self.items)-1]
+    def peek(self):
+        return self.items[len(self.items)-1]
 
-	def size(self):
-		return len(self.items)
+    def size(self):
+        return len(self.items)
 
-	def clear(self):
-		self.items = []
+    def clear(self):
+        self.items = []
 
-	def display(self):
-		for item in self.items:
-			print(item)
+    def display(self):
+        for item in self.items:
+            print(item)
 ```
 
 Inicializando a Stack:
@@ -198,7 +198,7 @@ Inserindo elementos na Stack:
 
 ```python
 for item in range(1,8):
-	s.push(item)
+    s.push(item)
 ```
 
 Executando operações de Remoção, Verificando o Tamanho, Verificando se ela está Vazia, Verificando o elemento do Topo e apresentando todos os elementos:
@@ -254,35 +254,35 @@ Vejamos um exemplo de uma simples Queue implementada com a linguagem Python
 
 ```python
 class Queue:
-	def __init__(self):
-		self.items = []
+    def __init__(self):
+        self.items = []
 
-	def is_empty(self):
-		return self.items == []
+    def is_empty(self):
+        return self.items == []
 
-	def enqueue(self, item):
-		self.items.append(item)
+    def enqueue(self, item):
+        self.items.append(item)
 
-	def dequeue(self):
-		if len(self.items) < 1:
-			return None
-		return self.items.pop(0)
+    def dequeue(self):
+        if len(self.items) < 1:
+            return None
+        return self.items.pop(0)
 
-	def size(self):
-		return len(self.items)
+    def size(self):
+        return len(self.items)
 
-	def front(self):
-		return self.items[0]
+    def front(self):
+        return self.items[0]
 
-	def rear(self):
-		return self.items[-1]
+    def rear(self):
+        return self.items[-1]
 
-	def clear(self):
-		self.items = []
+    def clear(self):
+        self.items = []
 
-	def display(self):
-		for item in self.items:
-			print(item)
+    def display(self):
+        for item in self.items:
+            print(item)
 ```
 
 Inicializando a Queue:
@@ -295,7 +295,7 @@ Inserindo elementos na Queue:
 
 ```python
 for item in range(1,8):
-	q.enqueue(item)
+    q.enqueue(item)
 ```
 
 Realizando operações como Remoção, Verificando o elemento da Frente e o Último, Verificando o Tamanho, Verificando se ela está Vazia e por fim Apresentando todos os elementos presentes nela:
