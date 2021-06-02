@@ -61,23 +61,23 @@ Vejamos um exemplo de como podemos definir uma função em Python capaz de compu
 
 ```python
 def sqrt(x):
-	"""
-	Retorna a raíz quadrada de x, se x for um quadrado perfeito
-	Caso contrário imprime um erro e retorna None
-	"""
-	resposta = 0
-	if x >= 0:
-		while resposta * resposta < x: 
-			resposta += 1
-		if resposta * resposta != x:
-			print(f'{x} não é um quadrado perfeito')
-			return None
-		else:
-			print(f'Raiz quadrade de {x} = {resposta}')
-			return resposta
-	else:
-		print(f'{x} é um número negativo')
-		return None
+    """
+    Retorna a raíz quadrada de x, se x for um quadrado perfeito
+    Caso contrário imprime um erro e retorna None
+    """
+    resposta = 0
+    if x >= 0:
+        while resposta * resposta < x: 
+            resposta += 1
+        if resposta * resposta != x:
+            print(f'{x} não é um quadrado perfeito')
+            return None
+        else:
+            print(f'Raiz quadrade de {x} = {resposta}')
+            return resposta
+    else:
+        print(f'{x} é um número negativo')
+        return None
 ```
 
 Definimos uma função chamada de **[sqrt()](https://github.com/the-akira/IntroComp/blob/master/materiais/Abstra%C3%A7%C3%A3o/sqrt.py)** que recebe um parâmetro **x**. Para que possamos utilizar essa função, em outras palavras, invocá-la, precisamos chamá-la pelo seu nome e passar a ela um argumento, nesse caso, um número que desejamos computar a raíz quadrada. Vejamos exemplos.
@@ -104,8 +104,8 @@ De forma a compreendermos essa ideia, consideremos a função **[f()](https://gi
 
 ```python
 def f(x):
-	x += 2
-	return x
+    x += 2
+    return x
 ```
 
 Vamos então definir uma variável **x** e invocar a função **f()** para testarmos:
@@ -144,14 +144,14 @@ A palavra "palíndromo" vem das palavras gregas palin (πάλιν (πάλι, no 
 
 ```python
 def palindromo(string):
-	"""
-	Retorna True se a string for palíndromo
-	Caso contrário retorna False
-	"""
-	if len(string) <= 1:
-		return True
-	else:
-		return string[0] == string[-1] and palindromo(string[1:-1])
+    """
+    Retorna True se a string for palíndromo
+    Caso contrário retorna False
+    """
+    if len(string) <= 1:
+        return True
+    else:
+        return string[0] == string[-1] and palindromo(string[1:-1])
 ```
 
 Vamos então testar se a função **[palindromo()](https://github.com/the-akira/IntroComp/blob/master/materiais/Abstra%C3%A7%C3%A3o/palindromo.py)** é capaz de operar corretamente
