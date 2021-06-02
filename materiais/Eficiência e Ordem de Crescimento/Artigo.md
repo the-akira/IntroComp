@@ -76,10 +76,10 @@ Considere uma função que busca por um elemento em uma lista:
 
 ```python
 def search_element(lst,e):
-	for i in lst:
-		if i == e:
-			return True
-	return False
+    for i in lst:
+        if i == e:
+            return True
+    return False
 ```
 
 Usualmente quando falamos de Complexidade, focamos no comportamento de pior caso.
@@ -109,11 +109,11 @@ Vamos agora considerar uma função que computa fatoriais:
 
 ```python
 def fatorial_iter(n):
-	resposta = 1
-	while n > 1:
-		resposta *= n 
-		n -= 1
-	return resposta
+    resposta = 1
+    while n > 1:
+        resposta *= n 
+        n -= 1
+    return resposta
 ```
 
 - Função que computa fatorial iterativamente
@@ -150,10 +150,10 @@ Por exemplo:
 
 ```python
 for i in range(n):
-	print('a')
+    print('a')
 
 for j in range(n*n):
-	print('b')
+    print('b')
 ```
 
 É `O(n) + O(n*n) = O(n+n²) = O(n²)` por causa do termo dominante
@@ -167,8 +167,8 @@ Por exemplo:
 
 ```python
 for i in range(n):
-	for j in range(n):
-		print('a')
+    for j in range(n):
+        print('a')
 ```
 
 É `O(n) * O(n) = O(n*n) = O(n²)` por causa do loop exterior executa **n** vezes o loop interior executa **n** vezes para cada iteração do loop exterior
@@ -269,7 +269,7 @@ lst = [1,2,3,4,5]
 
 ```python
 def print_element(lista):
-	print(lista[0])
+    print(lista[0])
 
 print_element(lst)
 ```
@@ -278,8 +278,8 @@ print_element(lst)
 
 ```python
 def print_elements(lista):
-	for item in lista:
-		print(item)
+    for item in lista:
+        print(item)
 
 print_elements(lst)
 ```
@@ -288,9 +288,9 @@ print_elements(lst)
 
 ```python
 def print_ordered_pairs(lista):
-	for i in lista:
-		for j in lista:
-			print(i,j)
+    for i in lista:
+        for j in lista:
+            print(i,j)
 
 print_ordered_pairs(lst)
 ```
@@ -299,9 +299,9 @@ print_ordered_pairs(lst)
 
 ```python
 def fibonacci(n):
-	if n <= 1:
-		return n
-	return fibonacci(n-2) + fibonacci(n-1)
+    if n <= 1:
+        return n
+    return fibonacci(n-2) + fibonacci(n-1)
 
 print(fibonacci(7))
 ```
@@ -310,10 +310,10 @@ Eliminando constantes **O(2n) = O(n)**:
 
 ```python
 def print_elements_twice(lista):
-	for i in lista:
-		print(i)
-	for j in lista:
-		print(j)
+    for i in lista:
+        print(i)
+    for j in lista:
+        print(j)
 
 print_elements_twice(lst)
 ```
