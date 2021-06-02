@@ -35,11 +35,11 @@ Neste artigo veremos especificamente os algoritmos de busca explícita: Linear S
 
 ```python
 def linear_search(L,e):
-	found = False
-	for i in range(len(L)):
-		if e == L[i]:
-			found = True
-	return found
+    found = False
+    for i in range(len(L)):
+        if e == L[i]:
+            found = True
+    return found
 
 L = [4,2,3,1,5]
 print(linear_search(L,5)) # True
@@ -52,23 +52,23 @@ print(linear_search(L,6)) # False
 
 ```python
 def binary_search(L,e):
-	def binary_search_helper(L,e,low,high):
-		if high == low:
-			return L[low] == e
-		mid = (low + high)//2
-		if L[mid] == e:
-			return True
-		elif L[mid] > e:
-			if low == mid:
-				return False
-			else:
-				return binary_search_helper(L,e,low,mid-1)
-		else:
-			return binary_search_helper(L,e,mid+1,high)
-	if len(L) == 0:
-		return False
-	else:
-		return binary_search_helper(L,e,0,len(L)-1)
+    def binary_search_helper(L,e,low,high):
+        if high == low:
+            return L[low] == e
+        mid = (low + high)//2
+        if L[mid] == e:
+            return True
+        elif L[mid] > e:
+            if low == mid:
+                return False
+            else:
+                return binary_search_helper(L,e,low,mid-1)
+        else:
+            return binary_search_helper(L,e,mid+1,high)
+    if len(L) == 0:
+        return False
+    else:
+        return binary_search_helper(L,e,0,len(L)-1)
 
 L = [1,2,3,4,5,6,7,8,9,10]
 print(binary_search(L,6)) # True
@@ -137,16 +137,16 @@ Algoritmos de Ordenação normalmente são classificados por:
 
 ```python
 def bubble_sort(L):
-	swap = False
-	while not swap:
-		swap = True 
-		for j in range(1,len(L)):
-			if L[j-1] > L[j]:
-				swap = False
-				temp = L[j]
-				L[j] = L[j-1]
-				L[j-1] = temp
-	return L 
+    swap = False
+    while not swap:
+        swap = True 
+        for j in range(1,len(L)):
+            if L[j-1] > L[j]:
+                swap = False
+                temp = L[j]
+                L[j] = L[j-1]
+                L[j-1] = temp
+    return L 
 
 L = [5,4,3,2,1]
 print(bubble_sort(L))
@@ -175,13 +175,13 @@ Manter a porção esquerda da lista ordenada
 
 ```python
 def selection_sort(L):
-	suffix = 0
-	while suffix != len(L):
-		for i in range(suffix,len(L)):
-			if L[i] < L[suffix]:
-				L[suffix], L[i] = L[i], L[suffix]
-		suffix += 1
-	return L 
+    suffix = 0
+    while suffix != len(L):
+        for i in range(suffix,len(L)):
+            if L[i] < L[suffix]:
+                L[suffix], L[i] = L[i], L[suffix]
+        suffix += 1
+    return L 
 
 L = [5,4,3,2,1]
 print(selection_sort(L))
@@ -202,32 +202,32 @@ print(selection_sort(L))
 
 ```python
 def merge(left, right):
-	result = []
-	i, j = 0, 0
-	while i < len(left) and j < len(right):
-		if left[i] < right[j]:
-			result.append(left[i])
-			i += 1
-		else:
-			result.append(right[j])
-			j += 1
-	while i < len(left):
-		result.append(left[i])
-		i += 1
-	while j < len(right):
-		result.append(right[j])
-		j += 1
-	return result
+    result = []
+    i, j = 0, 0
+    while i < len(left) and j < len(right):
+        if left[i] < right[j]:
+            result.append(left[i])
+            i += 1
+        else:
+            result.append(right[j])
+            j += 1
+    while i < len(left):
+        result.append(left[i])
+        i += 1
+    while j < len(right):
+        result.append(right[j])
+        j += 1
+    return result
 
 def merge_sort(L):
-	if len(L) < 2:
-		return L[:]
-	else:
-		middle = len(L)//2
-		left = merge_sort(L[:middle])
-		right = merge_sort(L[middle:])
-		return merge(left, right)
-	return L 
+    if len(L) < 2:
+        return L[:]
+    else:
+        middle = len(L)//2
+        left = merge_sort(L[:middle])
+        right = merge_sort(L[middle:])
+        return merge(left, right)
+    return L 
 
 L = [5,4,3,2,1]
 print(merge_sort(L))
