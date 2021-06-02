@@ -45,10 +45,10 @@ Podemos por exemplo implementar uma solução que calcule a soma de uma lista de
 
 ```python
 def somalistaiter(lista):
-	resultado = 0
-	for item in lista:
-		resultado += item
-	return resultado
+    resultado = 0
+    for item in lista:
+        resultado += item
+    return resultado
 
 lst = [1,2,3,4,5]
 print(somalistaiter(lst)) # 15
@@ -86,10 +86,10 @@ Nesta equação `primeiro(lista)` retorna o primeiro elemento da lista e `resto(
 
 ```python
 def somalista(lista):
-	if len(lista) == 1:
-		return lista[0]
-	else:
-		return lista[0] + somalista(lista[1:])
+    if len(lista) == 1:
+        return lista[0]
+    else:
+        return lista[0] + somalista(lista[1:])
 
 lista = [1,2,3,4,5]
 print(somalista(lista)) # 15
@@ -147,11 +147,10 @@ Vejamos algumas diferentes possíveis soluções para Fibonacci
 
 ```python
 def fib(n):
-	if n == 1 or n == 2:
-		return 1
-	else:
-		return fib(n-1) + fib(n-2)
-
+    if n == 1 or n == 2:
+        return 1
+    else:
+        return fib(n-1) + fib(n-2)
 ```
 
 Observe que esta implementação é concisa e de fácil compreensão, definimos um *base case* quando `n == 1 or n == 2` e executamos chamadas recursivas em `n - 1` & `n - 2`.
@@ -167,17 +166,17 @@ De forma a tornarmos nosso algoritmo mais eficiente, podemos utilizar um mecanis
 ```python
 cache = {}
 def fibonacci(n):
-	if n in cache:
-		return cache[n]
+    if n in cache:
+        return cache[n]
 	if n == 1 or n == 2:
-		resposta = 1
-	elif n > 2:
-		resposta = fibonacci(n-1) + fibonacci(n-2)
-	cache[n] = resposta
-	return resposta
+        resposta = 1
+    elif n > 2:
+        resposta = fibonacci(n-1) + fibonacci(n-2)
+    cache[n] = resposta
+    return resposta
 
 for n in range(1,201):
-	print(f"{n} = {fibonacci(n)}")
+    print(f"{n} = {fibonacci(n)}")
 ```
 
 Essa implementação utiliza um dicionário `cache` para guardar os valores já computados, isso fará com que as chamadas de Stack sejam drasticamente reduzidas e as computação duplicadas eliminadas, como podemos ver na seguinte figura ilustrativa:
@@ -192,17 +191,17 @@ Esta implementação se chamada **Bottom Up**, pois construímos as soluções d
 
 ```python
 def fib_bottom_up(n):
-	if n == 1 or n == 2:
-		return 1
-	bottom_up = [None] * (n+1)
-	bottom_up[1] = 1
-	bottom_up[2] = 1
-	for i in range(3,n+1):
-		bottom_up[i] = bottom_up[i-1] + bottom_up[i-2]
-	return bottom_up[n]
+    if n == 1 or n == 2:
+        return 1
+    bottom_up = [None] * (n+1)
+    bottom_up[1] = 1
+    bottom_up[2] = 1
+    for i in range(3,n+1):
+        bottom_up[i] = bottom_up[i-1] + bottom_up[i-2]
+    return bottom_up[n]
 
 for n in range(1,201):
-	print(f"{n} = {fib_bottom_up(n)}")
+    print(f"{n} = {fib_bottom_up(n)}")
 ```
 
 Observe que estamos utilizando uma lista chamada **bottom_up** para armazenar as soluções.
