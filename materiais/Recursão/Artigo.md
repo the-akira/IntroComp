@@ -99,7 +99,7 @@ Existem algumas idéias importantes neste código para analisarmos. Primeiro, na
 
 A **Figura 1** mostra a série de chamadas recursivas necessárias para somar a lista `[1,2,3,4,5]`. Você deve pensar nessa série de chamadas como uma série de simplificações. Cada vez que fazemos uma chamada recursiva, estamos resolvendo um problema menor, até chegarmos ao ponto em que o problema não pode ficar menor.
 
-![img](https://i.ibb.co/qFpSZGN/Recursive-Calls.png)
+![img](https://raw.githubusercontent.com/the-akira/IntroComp/master/materiais/Recurs%C3%A3o/Imagens/RecursiveCalls.png)
 
 <figure>
     <blockquote>
@@ -109,7 +109,7 @@ A **Figura 1** mostra a série de chamadas recursivas necessárias para somar a 
 
 Quando chegamos ao ponto em que o problema é o mais simples possível, começamos a reunir as soluções de cada um dos pequenos problemas até que o problema inicial seja resolvido. A **Figura 2** mostra as adições que são executadas como **somalista()**, que retrocedem na série de chamadas. Quando a **somalista()** retorna do problema principal, temos a solução para o problema como um todo.
 
-![img](https://i.ibb.co/DwKPQdP/Recursive-Returns.png)
+![img](https://raw.githubusercontent.com/the-akira/IntroComp/master/materiais/Recurs%C3%A3o/Imagens/RecursiveReturns.png)
 
 <figure>
     <blockquote>
@@ -181,7 +181,7 @@ for n in range(1,201):
 
 Essa implementação utiliza um dicionário `cache` para guardar os valores já computados, isso fará com que as chamadas de Stack sejam drasticamente reduzidas e as computação duplicadas eliminadas, como podemos ver na seguinte figura ilustrativa:
 
-![img](https://i.ibb.co/MS3cn6S/Fibonacci.png)
+![img](https://raw.githubusercontent.com/the-akira/IntroComp/master/materiais/Recurs%C3%A3o/Imagens/Fibonacci.png)
 
 Com essa estratégia conseguimos melhorar a complexidade temporal e espacial de nosso algoritmo para `O(n)`
 
