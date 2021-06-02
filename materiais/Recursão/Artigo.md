@@ -70,10 +70,10 @@ Observe que o conjunto mais interno de parênteses, `(4 + 5)`, é um problema qu
 
 ```
 resultado = (1+(2+(3+(4+5))))
-	resultado = (1+(2+(3+9)))
-		resultado = (1+(2+12))
-			resultado = (1+14)
-				resultado = 15
+    resultado = (1+(2+(3+9)))
+        resultado = (1+(2+12))
+            resultado = (1+14)
+                resultado = 15
 ```
 
 ## Solução Recursiva
