@@ -77,11 +77,11 @@ O programa em C a seguir imprime os valores decimais e hexadecimais dos caracter
 
 int main()
 {
-	int i;
-	for(i = 33; i < 127; i++)
-	{
-		printf("O valor ASCII de %c = %d = %x\n", i, i, i);
-	}
+    int i;
+    for(i = 33; i < 127; i++)
+    {
+        printf("O valor ASCII de %c = %d = %x\n", i, i, i);
+    }
 }
 ```
 
