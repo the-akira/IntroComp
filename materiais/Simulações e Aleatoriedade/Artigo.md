@@ -220,7 +220,7 @@ def max_val(to_consider, avail):
                                     avail - next_item.get_cost())
         with_val += next_item.get_value()
         without_val, without_to_take = max_val(to_consider[1:], avail)
-		# Escolhe o melhor ramo
+        # Escolhe o melhor ramo
         if with_val > without_val:
             result = (with_val, with_to_take + (next_item,))
         else:
