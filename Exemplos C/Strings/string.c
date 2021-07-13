@@ -2,8 +2,8 @@
 
 // programa que imprime uma string
 int main(void) {
-  char string[] = "Gabriel";
-  printf("valor da string: %s\n", string);
+    char string[] = "Gabriel";
+    printf("valor da string: %s\n", string);
 
-  return 0;
+    return 0;
 }
