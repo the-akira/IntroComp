@@ -1,33 +1,33 @@
 class Stack:
-	def __init__(self):
-		self.items = []
+    def __init__(self):
+        self.items = []
 
-	def is_empty(self):
-		return self.items == []
+    def is_empty(self):
+        return self.items == []
 
-	def push(self, item):
-		self.items.append(item)
+    def push(self, item):
+        self.items.append(item)
 
-	def pop(self):
-		return self.items.pop()
+    def pop(self):
+        return self.items.pop()
 
-	def peek(self):
-		return self.items[len(self.items)-1]
+    def peek(self):
+        return self.items[len(self.items)-1]
 
-	def size(self):
-		return len(self.items)
+    def size(self):
+        return len(self.items)
 
-	def clear(self):
-		self.items = []
+    def clear(self):
+        self.items = []
 
-	def display(self):
-		for item in self.items:
-			print(item)
+    def display(self):
+        for item in self.items:
+            print(item)
 
 s = Stack()
 
 for item in range(1,8):
-	s.push(item)
+    s.push(item)
 
 print(f"Elemento removido da Stack: {s.pop()}")
 print(f"Elemento removido da Stack: {s.pop()}")

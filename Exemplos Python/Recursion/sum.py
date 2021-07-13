@@ -3,10 +3,10 @@ Função sum()
 Soma recursiva dos N primeiros números naturais
 """
 def sum(n):
-	if n == 0:
-		return n
-	else:
-		return n + sum(n-1)
+    if n == 0:
+        return n
+    else:
+        return n + sum(n-1)
 
 print(sum(4))
 
