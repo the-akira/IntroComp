@@ -4,9 +4,9 @@
 // lower: converte o input para lower case
 int main(void)
 {
-	int c;
+    int c;
 
-	while((c = getchar()) != EOF)
-		putchar(tolower(c));
-	return 0;
+    while((c = getchar()) != EOF)
+        putchar(tolower(c));
+    return 0;
 }

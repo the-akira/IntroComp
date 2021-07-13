@@ -48,7 +48,7 @@ void heap(int arr[], int n)
 
 int print(int arr[], int n)
 {
-	printf("Array ordenado:\n");
+    printf("Array ordenado:\n");
     for(int i=0;i<n;i++)
     {
         printf("%d\n",arr[i]);

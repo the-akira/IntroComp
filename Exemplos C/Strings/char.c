@@ -4,19 +4,19 @@
 
 int main()
 {
-	// Criando um único caracter
-	char c = 'A';
+    // Criando um único caracter
+    char c = 'A';
 
-	// Criando um array de caracteres
-	char *X[5] = {"B","C","D","E","F"};
+    // Criando um array de caracteres
+    char *X[5] = {"B","C","D","E","F"};
 
-	// Criando uma string
-	char name[]={'G','A','B','R','I','E','L','\0'};
+    // Criando uma string
+    char name[]={'G','A','B','R','I','E','L','\0'};
 
-	printf("%c \n",c);
+    printf("%c \n",c);
 
-	for(int i=0;i<5;i++)
-		printf("%s \n",X[i]);
+    for(int i=0;i<5;i++)
+        printf("%s \n",X[i]);
 
-	printf("%s",name);
+    printf("%s",name);
 }

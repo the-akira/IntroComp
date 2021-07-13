@@ -4,12 +4,12 @@
 
 int main()
 {
-	int c;
+    int c;
 
-	printf("Expression: %d\n", (c = getchar()) != EOF);
-	printf("EOF: %d", EOF);
+    printf("Expression: %d\n", (c = getchar()) != EOF);
+    printf("EOF: %d", EOF);
 
-	while((c = getchar()) != EOF){
-		putchar(c);
-	}
+    while((c = getchar()) != EOF){
+        putchar(c);
+    }
 }
