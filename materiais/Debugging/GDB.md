@@ -1,6 +1,6 @@
 # Debugging com GDB
 
-O GNU Debugger (GDB) é um depurador portátil que roda em muitos sistemas Unix e funciona para muitas linguagens de programação, incluindo Ada, C, C ++, Objective-C, Free Pascal, Fortran, Go.
+O GNU Debugger (GDB) é um depurador portátil que roda em muitos sistemas Unix e funciona para muitas linguagens de programação, incluindo Ada, C, C++, Objective-C, Free Pascal, Fortran, Go.
 
 Para ler o manual completo digite o comando: `info gdb`
 
