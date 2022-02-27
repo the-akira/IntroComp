@@ -178,7 +178,7 @@ for i in range(n):
 - `O(1)`: denota tempo de execução constante
 - `O(log n)`: denota tempo de execução logarítmico
 - `O(n)`: denota tempo de execução linear
-- `O(nlogn)`: denota tempo de execução log-linear
+- `O(nlog n)`: denota tempo de execução log-linear
 - `O(n^c)`: denota tempo de execução polinomial (c é uma constante)
 - `O(c^n)`: denota tempo de execução exponencial (c é uma constante elevada à potência baseado no tamanho do input)
 
