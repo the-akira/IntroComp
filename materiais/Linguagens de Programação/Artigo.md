@@ -1,6 +1,6 @@
 # Linguagens de Programação
 
-![img](https://i.ibb.co/2N4gxVh/PLang.png)
+![img](https://raw.githubusercontent.com/the-akira/IntroComp/master/materiais/Linguagens%20de%20Programa%C3%A7%C3%A3o/Imagens/Linguagens.png)
 
 Existem diversas definições sobre o que são as Linguagens de Programação. 
 
@@ -56,7 +56,7 @@ Como as linguagens naturais, as linguagens de programação têm símbolos chama
 
 A imagem a seguir apresenta alguns lexemes na linguagem de programação C.
 
-![img](https://i.ibb.co/yWZjCp4/lexeme.png)
+![img](https://raw.githubusercontent.com/the-akira/IntroComp/master/materiais/Linguagens%20de%20Programa%C3%A7%C3%A3o/Imagens/lexemes_C.png)
 
 A gramática das linguagens de programação pode ser classificada em várias categorias usando a hierarquia de Chomsky, um sistema desenvolvido por Noam Chomsky em meados da década de 1950. A hierarquia consiste em 4 classes para gramática; Tipo 0, Tipo 1, Tipo 2 e Tipo 3. 
 
@@ -110,7 +110,7 @@ Um exemplo perfeito de uma linguagem moderna e altamente usada que depende de bi
 
 A imagem a seguir apresenta a biblioteca padrão da linguagem C.
 
-![img](https://i.ibb.co/mbyB602/cstdlibrary.png)
+![img](https://raw.githubusercontent.com/the-akira/IntroComp/master/materiais/Linguagens%20de%20Programa%C3%A7%C3%A3o/Imagens/C_stdlib.png)
 
 #### Tipos de Bibliotecas
 

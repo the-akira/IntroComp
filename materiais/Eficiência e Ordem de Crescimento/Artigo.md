@@ -26,7 +26,7 @@ A **notação Big O** é uma notação matemática que descreve o comportamento 
 
 Na ciência da computação, a notação Big O é usada para classificar algoritmos de acordo com o crescimento dos requisitos de tempo de execução ou espaço à medida que o tamanho do *input* aumenta.
 
-![img](https://i.ibb.co/ZXMGvVd/big-O.png)
+![img](https://raw.githubusercontent.com/the-akira/IntroComp/master/materiais/Efici%C3%AAncia%20e%20Ordem%20de%20Crescimento/Imagens/BigOGr%C3%A1fico.png)
 
 <figure>
     <blockquote>

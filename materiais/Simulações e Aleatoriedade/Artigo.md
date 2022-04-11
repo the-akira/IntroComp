@@ -18,7 +18,7 @@ Um modelo de otimização é muito simples, iniciamos com uma **[função objeti
 
 Um problema muito famoso de otimização é o [Knapsack problem](https://en.wikipedia.org/wiki/Knapsack_problem)
 
-![img](https://i.ibb.co/5c9sQ1V/knapsack.png)
+![img](https://raw.githubusercontent.com/the-akira/IntroComp/master/materiais/Simula%C3%A7%C3%B5es%20e%20Aleatoriedade/Imagens/knapsack.png)
 
 É um problema que normalmente é explicado em termos de um ladrão que invade uma residência e deseja roubar diversos objetos, mas ele tem apenas uma mochila que pode guardar uma quantidade finita de objetos, sendo assim, esse ladrão tem de resolver um problema de otimização de roubar objetos com o maior valor possível e ao mesmo tempo obedecer a restrição de que todos esses objetos devem caber na mochila.
 
@@ -33,11 +33,11 @@ Formalizando o *Knapsack problem*:
 
 Desejamos então buscar um **V** que maximize:
 
-![img](https://i.ibb.co/zsTMCWL/F1.png)
+![img](https://raw.githubusercontent.com/the-akira/IntroComp/master/materiais/Simula%C3%A7%C3%B5es%20e%20Aleatoriedade/Imagens/F1.png)
 
 Sujeito à restrição
 
-![img](https://i.ibb.co/d6JJ5yx/F2.png)
+![img](https://raw.githubusercontent.com/the-akira/IntroComp/master/materiais/Simula%C3%A7%C3%B5es%20e%20Aleatoriedade/Imagens/F2.png)
 
 A soma dos **weights** não pode ser maior do que **w**.
 
@@ -264,7 +264,7 @@ Por muitos anos as pessoas acreditavam na [Mecânica Newtoniana](https://en.wiki
 - Todo efeito tem uma causa
 - O mundo pode ser entendido causalmente
 
-![img](https://i.ibb.co/ZfGwFdf/newton.jpg)
+![img](https://raw.githubusercontent.com/the-akira/IntroComp/master/materiais/Simula%C3%A7%C3%B5es%20e%20Aleatoriedade/Imagens/newton.jpg)
 
 "Uma maçã cai de uma árvore por causa da gravidade e podemos saber onde ela irá cair".
 
@@ -410,7 +410,7 @@ Um exemplo elementar de uma caminhada aleatória é a caminhada aleatória na li
 
 Vejamos como podemos fazer uma simulação de um *Random Walk* em Python. Imagine que estamos em nossa casa, localizada na origem (0,0) e vamos nos mover aleatoriamente para o norte, sul, leste ou oeste e veremos o quão longe podemos chegar.
 
-![img](https://i.ibb.co/L6SR5rm/Random-Walk.png)
+![img](https://raw.githubusercontent.com/the-akira/IntroComp/master/materiais/Simula%C3%A7%C3%B5es%20e%20Aleatoriedade/Imagens/RandomWalk.png)
 
 ```python
 import random
@@ -583,7 +583,7 @@ Quando o resultado é `100` "caras" não há variabilidade em nossa resposta e q
 
 Vamos agora considerar um exemplo de uma roleta, muito utilizada em casinos, para isso vamos utilizar a linguagem Python.
 
-![img](https://i.ibb.co/2PW5t6G/roleta.png)
+![img](https://raw.githubusercontent.com/the-akira/IntroComp/master/materiais/Simula%C3%A7%C3%B5es%20e%20Aleatoriedade/Imagens/roleta.png)
 
 ```python
 import random

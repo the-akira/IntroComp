@@ -1,7 +1,7 @@
 # Recursão
 
 <h1 align="center">
-    <img alt="Recursion" src="https://i.ibb.co/ky1Wj9Y/mise.jpg">
+    <img alt="Recursion" src="https://raw.githubusercontent.com/the-akira/IntroComp/master/materiais/Recurs%C3%A3o/Imagens/mise.jpg">
 </h1>
 
 <figure>
@@ -220,7 +220,7 @@ A ideia básica para construirmos ela é a seguinte:
 
 A imagem seguinte apresenta uma árvore com 8 níveis de ramificações
 
-![img](https://i.ibb.co/M99yLZx/fractaltree.png)
+![img](https://raw.githubusercontent.com/the-akira/IntroComp/master/materiais/Recurs%C3%A3o/Imagens/fractaltree.png)
 
 A seguir temos o código responsável por desenhar a árvore, observe que estamos utilizando o módulo [turtle](https://docs.python.org/3/library/turtle.html) para nos auxiliar na tarefa de desenhos.
 

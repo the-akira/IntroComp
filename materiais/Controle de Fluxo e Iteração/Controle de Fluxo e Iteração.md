@@ -33,7 +33,7 @@ Uma sequência é uma série de instruções ao qual cada instrução é process
 
 Fluxograma
 
-![img](https://i.ibb.co/7bhykwq/Sequential.png)
+![img](https://raw.githubusercontent.com/the-akira/IntroComp/master/materiais/Controle%20de%20Fluxo%20e%20Itera%C3%A7%C3%A3o/Imagens/Sequential.png)
 
 Exemplo de Código em C
 
@@ -71,7 +71,7 @@ Uma Seleção ou Condição ou Decisão é necessária quando uma instrução de
 
 Fluxograma
 
-![img](https://i.ibb.co/r61FThM/Condicional.png)
+![img](https://raw.githubusercontent.com/the-akira/IntroComp/master/materiais/Controle%20de%20Fluxo%20e%20Itera%C3%A7%C3%A3o/Imagens/Condicional.png)
 
 Exemplo de Código em C
 
@@ -114,7 +114,7 @@ Ele pode ser encontrado em linguagens como: [C](https://en.wikipedia.org/wiki/C_
 
 Fluxograma
 
-![img](https://i.imgur.com/4uzZh01.png)
+![img](https://raw.githubusercontent.com/the-akira/IntroComp/master/materiais/Controle%20de%20Fluxo%20e%20Itera%C3%A7%C3%A3o/Imagens/SwitchCase.png)
 
 Exemplo de Código em C
 
@@ -163,7 +163,7 @@ Um Loop ou Iteração é necessário quando uma série de instruções precisam 
 
 O Loop no diagrama abaixo continuará a ser repetido até que o `False statement` seja atingido.
 
-![img](https://i.ibb.co/0sW17yb/Iteration.png)
+![img](https://raw.githubusercontent.com/the-akira/IntroComp/master/materiais/Controle%20de%20Fluxo%20e%20Itera%C3%A7%C3%A3o/Imagens/Iteration.png)
 
 Os constructos de Loop mais conhecidos são o [For loop](https://en.wikipedia.org/wiki/For_loop) e o [While loop](https://en.wikipedia.org/wiki/While_loop)
 
