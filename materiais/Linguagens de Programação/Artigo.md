@@ -4,7 +4,7 @@
 
 Existem diversas definições sobre o que são as Linguagens de Programação. 
 
-Pode ser dizer que:
+Pode-se dizer que:
 
 Uma linguagem de programação é uma linguagem artificial que pode ser usada para controlar o comportamento de uma máquina, principalmente de um computador. 
 
