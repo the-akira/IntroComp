@@ -40,7 +40,7 @@ Ele é um simples programa capaz de computar o fatorial de um determinado númer
 1. Compilando o Programa com **[GCC](https://gcc.gnu.org/)** usando `-g` de forma a preservar identificadores e símbolos
 
 ```
-gcc -g -o -Wall factorials factorials.c
+gcc -Wall -g -o factorials factorials.c
 ```
 
 2. Inicializando o **[GDB](https://www.gnu.org/software/gdb/)** 
@@ -270,7 +270,33 @@ set pagination off
 set confirm off
 ```
 
-27. Saindo do GDB
+27. Habilitando o Layout ASM
+
+```
+layout asm
+```
+
+28. Habilitando a Visualização dos Registradores
+
+```
+layout reg
+run
+```
+
+29. Definindo um Breakpoint em uma Instrução Específica:
+
+```
+break *0x55555555471a
+```
+
+30. Você também pode usar o comando display para exibir valores automaticamente sempre que um ponto de interrupção (**breakpoint**) for atingido:
+
+```
+display $eax
+display $edx
+```
+
+31. Saindo do GDB
 
 ```
 quit
