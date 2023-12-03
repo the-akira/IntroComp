@@ -201,7 +201,7 @@ Criando um script:
 ```
 python
 for i in range(5):
-	print(i)
+    print(i)
 end
 ```
 
