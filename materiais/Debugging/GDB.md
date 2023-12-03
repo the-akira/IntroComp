@@ -289,7 +289,7 @@ run
 break *0x55555555471a
 ```
 
-30. Você também pode usar o comando display para exibir valores automaticamente sempre que um ponto de interrupção (**breakpoint**) for atingido:
+30. O comando display serve para exibir valores automaticamente sempre que um ponto de interrupção (**breakpoint**) for atingido:
 
 ```
 display $eax
