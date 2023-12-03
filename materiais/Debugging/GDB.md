@@ -11,6 +11,7 @@ Cheat Sheets úteis:
 - [GDB Cheat Sheet](https://darkdust.net/files/GDB%20Cheat%20Sheet.pdf)
 - [GDB Quick Reference](https://users.ece.utexas.edu/~adnan/gdb-refcard.pdf)
 - [GDB Cheat Sheet Gist](https://gist.github.com/rkubik/b96c23bd8ed58333de37f2b8cd052c30)
+- [Debugging IA32 Assembly Code](https://www.cs.swarthmore.edu/~newhall/cs31/resources/ia32_gdb.php)
 
 Para estes exemplos iremos utilizar o seguinte programa escrito em C, sendo assim os exemplos estão em contexto com `factorials.c`
 
