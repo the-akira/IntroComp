@@ -283,13 +283,13 @@ layout reg
 run
 ```
 
-29. Definindo um Breakpoint em uma Instrução Específica:
+29. Definindo um Breakpoint em uma Instrução Específica
 
 ```
 break *0x55555555471a
 ```
 
-30. O comando display serve para exibir valores automaticamente sempre que um ponto de interrupção (**breakpoint**) for atingido:
+30. O comando display serve para exibir valores automaticamente sempre que um ponto de interrupção (**breakpoint**) for atingido
 
 ```
 display $eax
