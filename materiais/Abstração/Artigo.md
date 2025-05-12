@@ -27,7 +27,7 @@ Um exemplo desse processo de abstração é o desenvolvimento geracional de ling
 
 A computação opera principalmente independentemente do mundo concreto. O hardware implementa um [modelo de computação](https://en.wikipedia.org/wiki/Model_of_computation) que é intercambiável com outros. O software é estruturado em arquiteturas para permitir que os humanos criem sistemas enormes, concentrando-se em alguns problemas de cada vez. Essas arquiteturas são feitas de escolhas específicas de abstrações.
 
-![img](https://raw.githubusercontent.com/the-akira/IntroComp/master/materiais/Abstra%C3%A7%C3%A3o/Imagens/AbstractionLayers.png)
+![img](/materiais/Abstra%C3%A7%C3%A3o/Imagens/AbstractionLayers.png)
 
 <figure>
     <blockquote>
@@ -134,7 +134,7 @@ O código acima irá nos trazer como **output** o valor **5**.
 
 ### Determinando se uma palavra é Palíndromo
 
-![img](https://raw.githubusercontent.com/the-akira/IntroComp/master/materiais/Abstra%C3%A7%C3%A3o/Imagens/Pal%C3%ADndromo.jpeg)
+![img](/materiais/Abstra%C3%A7%C3%A3o/Imagens/Pal%C3%ADndromo.jpeg)
 
 Definindo uma função **Recursiva** para sabermos se uma palavra é **palíndromo**: 
 

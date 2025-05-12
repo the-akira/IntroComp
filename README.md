@@ -1,7 +1,7 @@
 <h1 align="center">Introdução aos Princípios da Computação e Programação</h1>
 
 <h1 align="center">
-    <img src="https://raw.githubusercontent.com/the-akira/IntroComp/master/Avatar.png"> </br>
+    <img src="Avatar.png"> </br>
 </h1>
 
 <p align="center">Artigos que visam introduzir conceitos essenciais da Ciência da Computação e Programação.</p>
