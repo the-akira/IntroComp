@@ -31,7 +31,7 @@ Neste artigo veremos especificamente os algoritmos de busca explícita: Linear S
 
 - Linear Search (Lista não precisa estar ordenada) - Complexidade: `O(n)`
 
-![img](https://raw.githubusercontent.com/the-akira/IntroComp/master/materiais/Algoritmos%20de%20Busca%20e%20Ordena%C3%A7%C3%A3o/Imagens/LinearSearch.png)
+![img](/materiais/Algoritmos%20de%20Busca%20e%20Ordena%C3%A7%C3%A3o/Imagens/LinearSearch.png)
 
 ```python
 def linear_search(L,e):
@@ -48,7 +48,7 @@ print(linear_search(L,6)) # False
 
 - Binary Search (Lista precisa estar ordenada) - Complexidade: `O(log n)`
 
-![img](https://raw.githubusercontent.com/the-akira/IntroComp/master/materiais/Algoritmos%20de%20Busca%20e%20Ordena%C3%A7%C3%A3o/Imagens/BinarySearch.png)
+![img](/materiais/Algoritmos%20de%20Busca%20e%20Ordena%C3%A7%C3%A3o/Imagens/BinarySearch.png)
 
 ```python
 def binary_search(L,e):

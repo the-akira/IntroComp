@@ -12,7 +12,7 @@ O Hardware normalmente é dirigido pelo Software para executar quaisquer comando
 
 Um transistor é um dispositivo semicondutor usado para amplificar ou alternar sinais eletrônicos e energia elétrica. É composto de material semicondutor geralmente com pelo menos três terminais para conexão a um circuito externo. Uma tensão ou corrente aplicada a um par de terminais do transistor controla a corrente através de outro par de terminais. Hoje, alguns transistores são empacotados individualmente, mas muitos mais são encontrados embutidos em circuitos integrados.
 
-![img](https://raw.githubusercontent.com/the-akira/IntroComp/master/materiais/Hardware/Imagens/1st_transistor.jpeg)
+![img](/materiais/Hardware/Imagens/1st_transistor.jpeg)
 
 <figure>
     <blockquote>
@@ -36,7 +36,7 @@ A maioria dos transistores é feita de silício muito puro e alguns de germânio
 
 Um **circuito integrado** ou circuito integrado monolítico (também conhecido como IC, chip ou microchip) é um conjunto de circuitos eletrônicos em uma pequena peça plana (ou "chip") de material semicondutor que normalmente é silício. A integração de um grande número de minúsculos **transistores MOS** em um pequeno chip resulta em circuitos que são ordens de magnitude menores, mais rápidas e de menor custo do que aquelas construídas com componentes eletrônicos discretos.
 
-![img](https://raw.githubusercontent.com/the-akira/IntroComp/master/materiais/Hardware/Imagens/MSI_nMOS_Soviet_Chip.jpeg)
+![img](/materiais/Hardware/Imagens/MSI_nMOS_Soviet_Chip.jpeg)
 
 <figure>
     <blockquote>
@@ -50,7 +50,7 @@ A lei de Moore é a observação de que o número de transistores em um circuito
 
 A observação recebeu o nome de Gordon Moore, co-fundador da Fairchild Semiconductor e antigo CEO e co-fundador da Intel, cujo trabalho de 1965 descreveu uma duplicação a cada ano no número de componentes por circuito integrado.
 
-![img](https://raw.githubusercontent.com/the-akira/IntroComp/master/materiais/Hardware/Imagens/Lei_de_Moore.png)
+![img](/materiais/Hardware/Imagens/Lei_de_Moore.png)
 
 <figure>
     <blockquote>
@@ -66,7 +66,7 @@ A visão de um futuro interminavelmente fortalecido e interconectado traz desafi
 
 A **unidade central de processamento (CPU)**, **memória de acesso aleatório (RAM)** e o **armazenamento persistente (HD/Flash)** são os elementos principais de um computador e são encontrados em todos eles: **laptops**, **smartphones**, **tablets** e **desktops**.
 
-![img](https://raw.githubusercontent.com/the-akira/IntroComp/master/materiais/Hardware/Imagens/PC.png)
+![img](/materiais/Hardware/Imagens/PC.png)
 
 <figure>
     <blockquote>
@@ -147,7 +147,7 @@ Uma unidade flash é mais rápida e consome menos energia que um disco rígido. 
 
 Na [arquitetura do computador](https://en.wikipedia.org/wiki/Computer_architecture), a hierarquia da memória separa o armazenamento do computador em uma hierarquia baseada no tempo de resposta. Como o tempo de resposta, a complexidade e a capacidade estão relacionados, os níveis também podem ser diferenciados por seu desempenho e tecnologias de controle. A hierarquia de memória afeta o desempenho no projeto arquitetônico do computador, previsões de algoritmos e construções de *programação low level* envolvendo [locality of reference](https://en.wikipedia.org/wiki/Locality_of_reference).
 
-![img](https://raw.githubusercontent.com/the-akira/IntroComp/master/materiais/Hardware/Imagens/MemoryHierarchy.png)
+![img](/materiais/Hardware/Imagens/MemoryHierarchy.png)
 
 <figure>
     <blockquote>
@@ -222,7 +222,7 @@ Na computação, o File System (frequentemente abreviado como fs) controla como 
 - **File**: um nome, um identificador para um bloco de bytes
 - **Exemplo**: `photo.png` se refere à 70KB de bytes de dados de uma imagem
 
-![img](https://raw.githubusercontent.com/the-akira/IntroComp/master/materiais/Hardware/Imagens/file_system.png)
+![img](/materiais/Hardware/Imagens/file_system.png)
 
 <figure>
     <blockquote>
@@ -242,7 +242,7 @@ As GPUs são usadas em sistemas embarcados, telefones celulares, computadores pe
 
 O termo "GPU" foi cunhado pela Sony em referência à GPU da Sony projetada pela Toshiba no console PlayStation em 1994. O termo foi então popularizado pela Nvidia em 1999, que comercializou a GeForce 256 como "a primeira GPU do mundo", que foi apresentado como um "processador de chip único com mecanismos integrados de transformação, iluminação, configuração/corte de triângulo e renderização".
 
-![img](https://raw.githubusercontent.com/the-akira/IntroComp/master/materiais/Hardware/Imagens/GPU.png)
+![img](/materiais/Hardware/Imagens/GPU.png)
 
 <figure>
     <blockquote>

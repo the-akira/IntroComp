@@ -31,7 +31,7 @@ O array, é uma estrutura de dados que consiste em uma coleção de elementos (v
 
 Um array é uma estrutura de tamanho fixo, que pode conter itens do mesmo tipo de dados. Pode ser um array de números inteiros, um array de números de ponto flutuante, um array de seqüências de caracteres ou mesmo um array de arrays (como arrays bidimensionais). Os arrays são indexados, o que significa que o acesso aleatório é possível.
 
-![img](https://raw.githubusercontent.com/the-akira/IntroComp/master/materiais/Estruturas%20de%20Dados/Imagens/Array.png)
+![img](/materiais/Estruturas%20de%20Dados/Imagens/Array.png)
 
 Na imagem acima temos um array de tamanho 7, contendo os elementos {22,33,7,88,1,4,13}, com os respectivos índices [0,1,2,3,4,5,6].
 
@@ -133,7 +133,7 @@ Uma stack é uma estrutura de dados de acesso limitado - os elementos podem ser 
 
 Uma analogia útil é pensar em uma pilha de livros; você pode remover apenas o livro superior e também adicionar um novo livro na parte superior.
 
-![img](https://raw.githubusercontent.com/the-akira/IntroComp/master/materiais/Estruturas%20de%20Dados/Imagens/Stack.png)
+![img](/materiais/Estruturas%20de%20Dados/Imagens/Stack.png)
 
 A imagem acima nos apresenta uma Stack em 4 situações diferentes:
 
@@ -216,7 +216,7 @@ s.display()
 
 Uma Queue é um contêiner de objetos (uma coleção linear) que são inseridos e removidos de acordo com o princípio **FIFO**(*first-in first-out*).
 
-![img](https://raw.githubusercontent.com/the-akira/IntroComp/master/materiais/Estruturas%20de%20Dados/Imagens/FIFO.png)
+![img](/materiais/Estruturas%20de%20Dados/Imagens/FIFO.png)
 
 A figura acima nos apresenta uma Queue em 4 situações diferentes:
 
@@ -229,7 +229,7 @@ Um grande exemplo de uma Queue é uma fila de estudantes aguardando para o atend
 
 As operações mais comuns de uma Queue são respectivamente: **enqueue** que significa inserir um item na parte de trás da fila e **dequeue** que significa remover o item da frente da Queue.
 
-![img](https://raw.githubusercontent.com/the-akira/IntroComp/master/materiais/Estruturas%20de%20Dados/Imagens/Queue.png)
+![img](/materiais/Estruturas%20de%20Dados/Imagens/Queue.png)
 
 A diferença entre **Stacks** e **Queues** está na remoção. Em uma stack, removemos o item adicionado mais recentemente; em uma queue, removemos o item adicionado menos recentemente.
 
@@ -314,7 +314,7 @@ q.display()
 
 Uma Linked List é uma coleção linear de elementos de dados, cuja ordem não é dada por seu posicionamento físico na memória. Em vez disso, cada elemento aponta para o próximo. É uma estrutura de dados que consiste em uma coleção de *nodes* que juntos representam uma sequência. 
 
-![img](https://raw.githubusercontent.com/the-akira/IntroComp/master/materiais/Estruturas%20de%20Dados/Imagens/LinkedList.png)
+![img](/materiais/Estruturas%20de%20Dados/Imagens/LinkedList.png)
 
 Na sua forma mais básica, cada *node* contém: dados e uma referência (em outras palavras, um link) para o próximo *node* na sequência. Essa estrutura permite a inserção ou remoção eficiente de elementos de qualquer posição na sequência durante a iteração. Variantes mais complexas adicionam links adicionais, permitindo a inserção ou remoção mais eficiente de *nodes* em posições arbitrárias.
 
@@ -353,7 +353,7 @@ Uma [Tree](https://en.wikipedia.org/wiki/Tree_(data_structure)) é uma estrutura
 
 A figura a seguir apresenta uma Tree com as terminologias básicas indicadas:
 
-![img](https://raw.githubusercontent.com/the-akira/IntroComp/master/materiais/Estruturas%20de%20Dados/Imagens/Tree.png)
+![img](/materiais/Estruturas%20de%20Dados/Imagens/Tree.png)
 
 Consistindo de vértices(*nodes*) e *edges* que os conectam. As Trees são semelhantes aos grafos, mas o ponto principal que diferencia uma Tree do Grafo é que um ciclo não pode existir em uma Tree.
 
@@ -384,11 +384,11 @@ Existem dois tipos de Heaps:
 
 1. **Min Heap**: A *key* do *parent* é menor ou igual à de seus *childs*. Isso é chamado de propriedade min-heap. A *root* conterá o valor mínimo da pilha.
 
-![img](https://raw.githubusercontent.com/the-akira/IntroComp/master/materiais/Estruturas%20de%20Dados/Imagens/MinHeap.png)
+![img](/materiais/Estruturas%20de%20Dados/Imagens/MinHeap.png)
 
 2. **Max Heap**: A *key* do *parent* é maior ou igual à de seus *childs*. Isso é chamado de propriedade max-heap. A *root* conterá o valor máximo da pilha.
 
-![img](https://raw.githubusercontent.com/the-akira/IntroComp/master/materiais/Estruturas%20de%20Dados/Imagens/MaxHeap.png)
+![img](/materiais/Estruturas%20de%20Dados/Imagens/MaxHeap.png)
 
 #### Operações em Heaps
 
@@ -424,7 +424,7 @@ Os dois tipos principais de Graphs são respectivamente **Direcionados** e **Nã
 
 Diz-se que um graph G é um graph direcionado se todas as suas edges tiverem uma direção indicando qual é o vertice inicial e qual é o vertice final.
 
-![img](https://raw.githubusercontent.com/the-akira/IntroComp/master/materiais/Estruturas%20de%20Dados/Imagens/DirectedGraph.png)
+![img](/materiais/Estruturas%20de%20Dados/Imagens/DirectedGraph.png)
 
 Denotamos que **(u,v)** é incidente de ou parte de um vertice **u** e é incidente em ou entra em um vertice **v**.
 
@@ -440,7 +440,7 @@ Então de acordo com a imagem temos que:
 
 Diz-se que um graph G é um graph não-direcionado se todas as suas edges não tiverem direção. Podem ocorrer nos dois sentidos entre os dois vértices.
 
-![img](https://raw.githubusercontent.com/the-akira/IntroComp/master/materiais/Estruturas%20de%20Dados/Imagens/Graph.png)
+![img](/materiais/Estruturas%20de%20Dados/Imagens/Graph.png)
 
 Se um vertice não está conectado a nenhum node do graph, ele é dito ser **isolado**.
 
@@ -460,7 +460,7 @@ Na computação, uma **Hash Table**(também conhecida como **Hash Map**) é uma 
 
 Uma **Hash Table** usa uma [função de hash](https://en.wikipedia.org/wiki/Hash_function) para calcular um **índice**, também chamado de **código de hash**, em uma array de *buckets* ou *slots*, a partir dos quais o valor desejado pode ser encontrado. Durante a pesquisa, a chave é "hashed" e o hash resultante indica onde o valor correspondente é armazenado.
 
-![img](https://raw.githubusercontent.com/the-akira/IntroComp/master/materiais/Estruturas%20de%20Dados/Imagens/HashTable.png)
+![img](/materiais/Estruturas%20de%20Dados/Imagens/HashTable.png)
 
 O **endereçamento direto** usa o mapeamento individual entre os valores e as chaves ao armazenar em uma tabela. No entanto, há um problema com essa abordagem quando há um grande número de pares de valores-chave. A tabela será enorme com tantos registros e poderá ser impraticável ou até impossível de ser armazenada, dada a memória disponível em um computador típico. Para evitar esse problema, usamos tabelas de hash.
 

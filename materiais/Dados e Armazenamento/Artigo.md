@@ -20,7 +20,7 @@ Um bit pode ser armazenado por um dispositivo digital ou outro sistema físico e
 
 "Tudo em um computador são 0's e 1's. O bit armazena apenas 0 ou 1: é o menor componente básico de armazenamento."
 
-![img](https://raw.githubusercontent.com/the-akira/IntroComp/master/materiais/Dados%20e%20Armazenamento/Imagens/Bits-Bytes.png)
+![img](/materiais/Dados%20e%20Armazenamento/Imagens/Bits-Bytes.png)
 
 <figure>
     <blockquote>
@@ -42,7 +42,7 @@ Um bit pode ser armazenado por um dispositivo digital ou outro sistema físico e
 - Os bytes são excelentes para guardarmos letras/caracteres
 - Nos computadores, os componentes de cores RGB são definidos de maneira padrão em uma escala de 0 a 255, que é de 8 bits ou 1 byte, estes são frequentemente representados como números decimais ou hexadecimais.
 
-![img](https://raw.githubusercontent.com/the-akira/IntroComp/master/materiais/Dados%20e%20Armazenamento/Imagens/Cores-RGB.png)
+![img](/materiais/Dados%20e%20Armazenamento/Imagens/Cores-RGB.png)
 
 <figure>
     <blockquote>

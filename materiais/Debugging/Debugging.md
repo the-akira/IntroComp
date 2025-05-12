@@ -4,7 +4,7 @@ A história por trás do termo **[Debugging](https://en.wikipedia.org/wiki/Debug
 
 O termo "bug" foi usado pela pioneira em informática Grace Hopper, que divulgou a causa de um mau funcionamento em um computador eletromecânico inicial. 
 
-![img](https://raw.githubusercontent.com/the-akira/IntroComp/master/materiais/Debugging/Imagens/bug.jpeg)
+![img](/materiais/Debugging/Imagens/bug.jpeg)
 
 <figure>
     <blockquote>
@@ -14,7 +14,7 @@ O termo "bug" foi usado pela pioneira em informática Grace Hopper, que divulgou
 
 Em 1946, quando [Admiral Grace Hopper](https://en.wikipedia.org/wiki/Admiral_Grace_Hopper) foi liberada do serviço ativo, ingressou na Faculdade Harvard no Laboratório de Computação, onde continuou seu trabalho nos computadores Mark II e III. Os operadores localizaram um erro no Mark II em uma mariposa presa em um relé, cunhando assim o termo [bug](https://en.wikipedia.org/wiki/Software_bug). Este bug foi cuidadosamente removido e colado no livro de registro. A partir do primeiro bug, hoje chamamos de erros ou falhas em um programa um bug e a remoção deles de **[debug](https://en.wikipedia.org/wiki/Debugging)**, que seria remover o problema/erro do programa.
 
-![img](https://raw.githubusercontent.com/the-akira/IntroComp/master/materiais/Debugging/Imagens/Mark_II.jpeg)
+![img](/materiais/Debugging/Imagens/Mark_II.jpeg)
 
 <figure>
     <blockquote>
